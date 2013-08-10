@@ -1,0 +1,33 @@
+---
+layout: set
+title:  "Since the 4th of July"
+category: posts
+---
+
+<article plangular data-src="'https://soundcloud.com/broccolini/sets/since-the-4th-of-july'" class="grid-1 mb2 bd bg-light-gray rounded">
+        <div class="pad1 bd bg-center bg-cover white shadow-darken" style="background-image: url(images/plants.jpg)">
+          <p>{{ playlist.user.username }}</h1>
+          <h1 class="">{{ playlist.title }}</h1>
+          <div class="media">
+            <div class="img mr1">
+              <a href="" ng-click="player.previous(playlist)" class="fl white"><i class="icon-previous p tappad"></i></a>
+              <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="fl white"><i class="icon-play h3 tappad"></i></a>
+              <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="fl white"><i class="icon-pause h3 tappad"></i></a>
+              <a href="" ng-click="player.next(playlist)" class="fl white"><i class="icon-skip p tappad"></i></a>
+            </div>
+            <div class="bd">
+              <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="mt1 progress progress-white w100">{{ currentTime / duration}}</progress>
+              <small class="fl">{{ currentTime | playTime }}</small>
+              <small class="fr">{{ duration | playTime }}</small>
+            </div>
+          </div>
+        </div>
+        <div class="pad1 bd">
+          <ol class="mid-gray">
+            <li ng-repeat="track in playlist.tracks" class="ml2"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
+              <strong>{{ track.user.username }}</strong> - {{ track.title }}
+            </a></li>
+          </ol>
+          <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="fr small mid-gray">View on SoundCloud</a>
+        </div>
+      </article>
