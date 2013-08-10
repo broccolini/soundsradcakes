@@ -1,30 +1,38 @@
----
-layout: default
-title:  "Sounds Radcakes"
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sounds Radcakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Music goes here <span class="mrpointy">☟</span>
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="plangular.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700|Rum+Raisin|Port+Lligat+Slab' rel='stylesheet' type='text/css'>
 
-<!-- <div class="robots">
-  {% for post in site.posts %}
-    {% if post.excerpt_tag %}
-      {{ post.excerpt_tag | markdownify }}
-    {% else %}
-      <div class="shell">
-      <a href="{{ post.url }}">{{ post.content }}</a>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div> -->
+  <script src="//connect.soundcloud.com/sdk.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+  <script src="plangular.js"></script>
 
-<section>
+</head>
+<body ng-app="plangular">
 
-	<div class="party" plangular data-src="'https://soundcloud.com/sweaters/cake-sweater-beats-bootleg'">
-      <a href="" ng-click="player.play(track)" ng-hide="player.playing == track" class="button">Play</a>
-      <span class="info">{{ track.user.username }} - {{ track.title }}</span>
+<header class="pad4-res bg-pink white pos-rel fade-in">
+      <h1 class="massive fancy-font">SoundsRadcakes</h1>
+      <p>Muuuuuuuusic</p>
     </div>
+  </div>
+</header>
 
-<article plangular data-src="'https://soundcloud.com/broccolini/sets/since-the-4th-of-july'" class="grid-1 mb2 bd bg-light-gray rounded">
+<main class="center">
+
+  <section class="float-up anim-delay-4">
+
+    <p>Music goes here.</p>
+
+    <div class="d-center">
+
+      <article plangular data-src="'https://soundcloud.com/broccolini/sets/loveandheartbreak'" class="grid-1 mb2 bd bg-light-gray rounded">
         <div class="pad1 bd bg-center bg-cover white shadow-darken" style="background-image: url(images/plants.jpg)">
           <p>{{ playlist.user.username }}</h1>
           <h1 class="">{{ playlist.title }}</h1>
@@ -51,4 +59,20 @@ Music goes here <span class="mrpointy">☟</span>
           <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="fr small mid-gray">View on SoundCloud</a>
         </div>
       </article>
-</section>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+<footer class="media media-fold">
+  
+  <p class="bd tappad">Powered by SoundCloud. Made with love by <a href="http://broccolini.net">Broccolini</a></p>
+</footer>
+
+</div>
+ 
+</body>
+</html>
