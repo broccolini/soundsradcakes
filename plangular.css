@@ -18,10 +18,14 @@ a:hover {
   color: #888;
 }
 
+header a {
+  color: #fff;
+}
+
 header p {
   font-size:24px;
-  margin-top: -10px;
-  font-weight: 300;
+  margin-top: -14px;
+  font-weight: 400;
 }
 
 .wrap { margin-right: auto; margin-left: auto; }
@@ -29,7 +33,6 @@ header p {
 .fancy-font {
  font-family: 'Roboto', Helvetica, sans-serif;
  font-weight: 900;
- text-shadow: 0px 1px 3px #E7D613;
 }
 
 .center {
@@ -105,7 +108,7 @@ a.white:hover  { color: rgba(255,255,255,.8); }
 .bg-white      { background-color: #fff; }
 
 .yellow { color: #f7ff00;}
-.bg-yellow { background-color: #FAE81B; }
+.bg-yellow { background-color: #FFDE30; }
 .bg-pink { background-color: #EB3B7E;}
 
 .bg-center { background-position: center; background-repeat: no-repeat; }
