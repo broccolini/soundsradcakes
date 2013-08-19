@@ -31,6 +31,17 @@ header p {
   font-weight: 400;
 }
 
+img {
+margin: auto 0;
+margin-left: auto;
+margin-right: auto;
+display: block;
+position: absolute;
+right: 0;
+left: 0;
+bottom: 0;
+}
+
 /* Fonts */
 .f-bold { font-weight: 900; }
 .f-medium { font-weight: 700; }
@@ -38,6 +49,8 @@ header p {
 .f-massive { font-size: 80px; }
 .f-big { font-size: 50px; }
 .f-center { text-align: center; }
+
+.lh2 { line-height: 2em; }
 
 .setname {
   padding: .5em 0;
@@ -53,7 +66,7 @@ header {
 .center { margin: 0 auto; }
 
 .feature {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .media {
@@ -62,29 +75,10 @@ header {
 
 .wrap { margin-right: auto; margin-left: auto; }
 
+.bg-center { margin: 0 auto; }
 
-.bg-center {
-  margin: 0 auto;
-}
-
-/* Setlist images */
-
-.bg-4july { 
-  background: url(../images/4july.jpg) no-repeat center 100px; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  max-height: 976px;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
+.fl { float: left; }
+.fr { float: right; }
 
 .db  { display: block; }
 
@@ -94,15 +88,11 @@ header {
 .padtb3 { padding: 3em 0; }
 .padtb4 { padding: 4em 0; }
 
-.lh2 {
-  line-height: 2em;
-}
-
-.w100 { width: 100%; }
-
 
 
 /* Themes */
+
+.w100 { width: 100%; }
 
 .dark-gray     { color: #444; }
 .bg-dark-gray  { background-color: #444; }
@@ -127,14 +117,35 @@ a.white:hover  { color: rgba(255,255,255,.8); }
 .bg-cover { background-size: cover; }
 .bg-contain { background-size: contain; }
 .bg-bottom { background-position: bottom; background-repeat: no-repeat; }
+.bg-top { background-position: top; background-repeat: no-repeat; }
 .bg-w100 { background-size: 100%; }
 .bg-h100 { background-size: 100%; }
 
 
 
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 1600px) {
+  .bg-adjust { background-position: bottom; }
+}
 
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/*@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .bg-adjust { background-position: bottom; }
+}*/
 
-/*.progress {
+/* All Mobile Sizes (devices and browser) */
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .bg-adjust { background-position: bottom; }
+  .f-big { font-size: 40px; }
+}*/
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+ .bg-adjust { background-position: bottom; } 
+   .f-big { font-size: 40px; }
+}
+
+.progress {
   -webkit-appearance: none;
 }
 .progress::-webkit-progress-bar {
@@ -143,12 +154,14 @@ a.white:hover  { color: rgba(255,255,255,.8); }
 }
 .progress::-webkit-progress-value { -webkit-appearance: none; }
 
+.progress-yellow::-webkit-progress-value { background-color: #FFDE30; }
+.progress-yellow::-webkit-progress-bar { background-color: #ddd; }
+
 .progress-gray::-webkit-progress-value { background-color: #999; }
-.progress-gray-alt::-webkit-progress-bar { background-color: #ddd; }
+.progress-gray::-webkit-progress-bar { background-color: #ddd; }
 
 .progress-white::-webkit-progress-value { background-color: #fff; }
 .progress-white::-webkit-progress-bar { background-color: rgba(255,255,255,.4); }
-
 
 
 .progress-link::-webkit-progress-value { background-color: #0cf; }
@@ -156,7 +169,7 @@ a.white:hover  { color: rgba(255,255,255,.8); }
 
 .progress-white-bg::-webkit-progress-bar {
   background-color: #fff;
-}*/
+}
 
 
 /* Animations */
