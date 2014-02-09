@@ -38,9 +38,16 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   display: block; }
 
 body {
+  color: #444444;
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400; }
+
+a {
+  color: #ffde30;
+  text-decoration: underline; }
+  a:hover {
+    color: #fcd400; }
 
 .h-mega {
   font-size: 3rem;
@@ -78,7 +85,7 @@ small, .small {
     font-size: 3rem; } }
 
 strong, .bold {
-  font-weight: bold; }
+  font-weight: 900; }
 
 .regular {
   font-weight: normal; }
@@ -228,3 +235,9 @@ strong, .bold {
 
 .fit {
   max-width: 100%; }
+
+.bg-yellow {
+  background-color: #ffde30; }
+
+.white {
+  color: white; }
