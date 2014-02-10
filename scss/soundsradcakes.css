@@ -44,10 +44,10 @@ body {
   font-weight: 400; }
 
 a {
-  color: #ffde30;
+  color: #898989;
   text-decoration: underline; }
   a:hover {
-    color: #fcd400; }
+    color: #707070; }
 
 .h-mega {
   font-size: 3rem;
@@ -61,7 +61,7 @@ h2, .h2 {
   font-size: 1.5rem;
   line-height: 1.25; }
 
-h3, h4, h5, h6, dl, ol, ul, p, .p {
+h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem; }
 
 small, .small {
@@ -239,5 +239,26 @@ strong, .bold {
 .bg-yellow {
   background-color: #ffde30; }
 
+.yellow {
+  background-color: #ffde30; }
+
 .white {
   color: white; }
+
+.bg-dark-gray {
+  background-color: #444444; }
+
+.dark-gray {
+  color: #444444; }
+
+.bg-mid-gray {
+  background-color: #898989; }
+
+.mid-gray {
+  color: #898989; }
+
+.bg-light-gray {
+  background-color: #d9d9d9; }
+
+.light-gray {
+  color: #d9d9d9; }
