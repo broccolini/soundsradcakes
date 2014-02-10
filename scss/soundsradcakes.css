@@ -64,6 +64,9 @@ h2, .h2 {
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem; }
 
+ul {
+  line-height: 1.25; }
+
 small, .small {
   font-size: .875rem; }
 
@@ -102,6 +105,10 @@ strong, .bold {
 
 .left-align {
   text-align: left; }
+
+.list-none {
+  list-style-type: none;
+  padding-left: 0; }
 
 .type-margins h1, .type-margins .h1 {
   margin-bottom: 1rem; }
