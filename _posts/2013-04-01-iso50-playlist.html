@@ -2,9 +2,9 @@
 layout: default
 title:  "iso50 playlist 16"
 ---
-
-<article plangular data-src="'https://soundcloud.com/jxnblk/sets/iso50-playlist-16'" class=" bg-dark-gray white center feature">
-  <h1 class="setname f-center f-big f-light">{{ playlist.title }}</h1>
+{% raw  %}
+<article plangular data-src="http://soundcloud.com/jxnblk/sets/iso50-playlist-16" class="py2 px2 bg-dark-gray center">
+  <h1 class="setname f-center white h2">{{ playlist.title }}</h1>
   <div class="media bg-center">
     <div class="bg-center f-center">
       <a href="" ng-click="player.previous(playlist)" class="white"><i class="icon-previous p tappad"></i></a>
@@ -19,10 +19,11 @@ title:  "iso50 playlist 16"
     </div>
   </div>
 <div class="media white bd bg-center padtb3">
-  <ol class="white">
+  <ol class="left-align">
     <li ng-repeat="track in playlist.tracks" class="lh2"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'white': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
       <strong>{{ track.user.username }}</strong> - {{ track.title }}
     </a></li>
   </ol>
   <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="fr small mid-gray">View on SoundCloud</a>
 </article>
+{% endraw %}
