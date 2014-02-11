@@ -41,7 +41,7 @@ body {
   color: #444444;
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
-  font-weight: 400; }
+  font-weight: 300; }
 
 a {
   color: #898989;
@@ -113,6 +113,11 @@ strong, .bold {
   margin-bottom: 1rem; }
 .type-margins h3, .type-margins h4, .type-margins h5, .type-margins h6, .type-margins p, .type-margins dl, .type-margins ol, .type-margins ul {
   margin-bottom: 1rem; }
+
+.wrap {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .m1 {
   margin: 1rem; }
@@ -271,7 +276,11 @@ strong, .bold {
   color: #d9d9d9; }
 
 .progress {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 1rem; }
 
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;

@@ -4,22 +4,23 @@ title:  "I'm here now"
 ---
 {% raw  %}
 <article plangular data-src="http://soundcloud.com/broccolini/sets/im-here-now" class="py2 px2 center bg-w100 bg-top">
-	  <h1 class="setname f-center dark-gray h2">{{ playlist.title }}</h1>
-	  <div class="media bg-center">
-	    <div class="bg-center f-center">
-	      <a href="" ng-click="player.previous(playlist)" class="dark-gray"><i class="icon-previous p tappad"></i></a>
+	  <h1 class="h2 mb1">{{ playlist.title }}</h1>
+    <p class="mb1">{{ playlist.description }}</p>
+	  <div class="media block">
+	    <div class="block">
+	      <!-- <a href="" ng-click="player.previous(playlist)" class="dark-gray"><i class="icon-previous p tappad"></i></a> -->
 	      <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-gray"><i class="icon-play h3 tappad"></i></a>
-	      <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="dark-gray"><i class="icon-pause h3 tappad"></i></a>
-	      <a href="" ng-click="player.next(playlist)" class="dark-gray"><i class="icon-skip p tappad"></i></a>
+	      <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="mid-gray"><i class="icon-pause h3 tappad"></i></a>
+	      <!-- <a href="" ng-click="player.next(playlist)" class="dark-gray"><i class="icon-skip p tappad"></i></a> -->
 	    </div>
-	    <div class="bd bg-center center">
-	      <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="mt1 progress progress-gray w100">{{ currentTime / duration}}</progress>
+	    <div class="block">
+	      <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="block progress mt1 mb1">{{ currentTime / duration}}</progress>
 	      <small class="fl">{{ currentTime | playTime }}</small>
 	      <small class="fr">{{ duration | playTime }}</small>
 	    </div>
 	  </div>
-		<div class="media bg-center py2">
-		  <ol class="left-align">
+		<div class="media py2">
+		  <ol class="left-align block">
 		    <!-- <li ng-repeat="track in playlist.tracks" class=""><a href="" ng-click="player.play(playlist.tracks, $index)" class="" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
 		      <strong>{{ track.user.username }}</strong> - {{ track.title }}
 		    </a></li> -->
@@ -27,7 +28,7 @@ title:  "I'm here now"
               <strong>{{ track.user.username }}</strong> - {{ track.title }}
             </a></li>
 		  </ol>
-		  <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="fr small mid-gray">View on SoundCloud</a>
+		  <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="small mid-gray">View on SoundCloud</a>
 		</div>
 	</article>
 {% endraw %}

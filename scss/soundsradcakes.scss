@@ -76,7 +76,7 @@ body {
   color: $dark-gray;
   font-family: $font-primary;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 a {
@@ -153,6 +153,12 @@ strong, .bold { font-weight: 900; }
 
 // Layout
 
+.wrap { 
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 // Margins
 .m1  { margin: $space; }
 .mt1 { margin-top: $space; }
@@ -226,6 +232,10 @@ strong, .bold { font-weight: 900; }
 // Player controls
 .progress {
   -webkit-appearance: none;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: $space;
 }
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;
@@ -233,7 +243,6 @@ strong, .bold { font-weight: 900; }
 }
 
 .progress::-webkit-progress-value { -webkit-appearance: none; }
-
 
 
 
