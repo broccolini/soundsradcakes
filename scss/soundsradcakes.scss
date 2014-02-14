@@ -214,6 +214,7 @@ strong, .bold { font-weight: 900; }
 .left { float: left; }
 .right { float: right; }
 .fit { max-width: 100%; }
+.hidden { overflow: hidden; }
 
 
 // Themes
@@ -233,22 +234,41 @@ strong, .bold { font-weight: 900; }
 .progress {
   -webkit-appearance: none;
   cursor: pointer;
-  overflow: hidden;
+  height: 0.3rem;
   width: 100%;
-  height: $space;
 }
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;
   background-color: $mid-gray;
 }
-
 .progress::-webkit-progress-value { -webkit-appearance: none; }
 
+.progress-gray::-webkit-progress-value { background-color: $yellow; }
+.progress-gray-alt::-webkit-progress-bar { background-color: $mid-gray; }
 
+.progress-time {
+  line-height: 2.25; 
+}
+
+.pad { margin-top: 0.5 * $space; }
+
+.icon {
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.icon-play {  
+}
+
+.icon-pause {
+}
+
+a:hover svg { fill: $yellow; }
+a svg { fill: $mid-gray; }
 
 /* Radicons */
 
-@font-face {
+/*@font-face {
   font-family: 'Radicons';
   src:url('icons/Radicons.eot');
   src:url('icons/Radicons.eot?#iefix') format('embedded-opentype'),
@@ -291,4 +311,4 @@ strong, .bold { font-weight: 900; }
 .icon-nudge-right {
   position: relative;
   left: .125em;
-}
+}*/

@@ -248,6 +248,9 @@ strong, .bold {
 .fit {
   max-width: 100%; }
 
+.hidden {
+  overflow: hidden; }
+
 .bg-yellow {
   background-color: #ffde30; }
 
@@ -278,9 +281,8 @@ strong, .bold {
 .progress {
   -webkit-appearance: none;
   cursor: pointer;
-  overflow: hidden;
-  width: 100%;
-  height: 1rem; }
+  height: 0.3rem;
+  width: 100%; }
 
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;
@@ -289,13 +291,39 @@ strong, .bold {
 .progress::-webkit-progress-value {
   -webkit-appearance: none; }
 
+.progress-gray::-webkit-progress-value {
+  background-color: #ffde30; }
+
+.progress-gray-alt::-webkit-progress-bar {
+  background-color: #898989; }
+
+.progress-time {
+  line-height: 2.25; }
+
+.pad {
+  margin-top: 0.5rem; }
+
+.icon {
+  max-height: 24px;
+  max-width: 24px; }
+
+a:hover svg {
+  fill: #ffde30; }
+
+a svg {
+  fill: #898989; }
+
 /* Radicons */
-@font-face {
+/*@font-face {
   font-family: 'Radicons';
-  src: url("icons/Radicons.eot");
-  src: url("icons/Radicons.eot?#iefix") format("embedded-opentype"), url("icons/Radicons.woff") format("woff"), url("icons/Radicons.ttf") format("truetype"), url("icons/Radicons.svg#Radicons") format("svg");
+  src:url('icons/Radicons.eot');
+  src:url('icons/Radicons.eot?#iefix') format('embedded-opentype'),
+    url('icons/Radicons.woff') format('woff'),
+    url('icons/Radicons.ttf') format('truetype'),
+    url('icons/Radicons.svg#Radicons') format('svg');
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 [data-icon]:before {
   font-family: 'Radicons';
@@ -304,7 +332,8 @@ strong, .bold {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 .icon-settings, .icon-fast-forward, .icon-skip, .icon-pause,
 .icon-play, .icon-previous, .icon-rewind, .icon-heart {
@@ -314,32 +343,18 @@ strong, .bold {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  -webkit-font-smoothing: antialiased; }
-
-.icon-settings:before {
-  content: "\2318"; }
-
-.icon-fast-forward:before {
-  content: "\290f"; }
-
-.icon-skip:before {
-  content: "\2192"; }
-
-.icon-pause:before {
-  content: "\25fc"; }
-
-.icon-play:before {
-  content: "\25b6"; }
-
-.icon-previous:before {
-  content: "\2190"; }
-
-.icon-rewind:before {
-  content: "\290e"; }
-
-.icon-heart:before {
-  content: "\2665"; }
+  -webkit-font-smoothing: antialiased;
+}
+.icon-settings:before { content: "\2318"; }
+.icon-fast-forward:before { content: "\290f"; }
+.icon-skip:before { content: "\2192"; }
+.icon-pause:before { content: "\25fc"; }
+.icon-play:before { content: "\25b6"; }
+.icon-previous:before { content: "\2190"; }
+.icon-rewind:before { content: "\290e"; }
+.icon-heart:before { content: "\2665"; }
 
 .icon-nudge-right {
   position: relative;
-  left: .125em; }
+  left: .125em;
+}*/
