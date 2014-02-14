@@ -4,7 +4,7 @@ title:  "I'm here now"
 ---
 {% raw  %}
 <article plangular data-src="http://soundcloud.com/broccolini/sets/im-here-now" class="py2 px2 center bg-w100 bg-top">
-	  <h1 class="h2 mb1">{{ playlist.title }}</h1>
+	  <h1 class="h2 mb1 regular">{{ playlist.title }}</h1>
     <p class="mb1">{{ playlist.description }}</p>	  
     <div class="media block mt1">
 	    <div class="left">
@@ -30,10 +30,7 @@ title:  "I'm here now"
     </div>	
     <div class="media py2">
 		  <ol class="left-align block">
-		    <!-- <li ng-repeat="track in playlist.tracks" class=""><a href="" ng-click="player.play(playlist.tracks, $index)" class="" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
-		      <strong>{{ track.user.username }}</strong> - {{ track.title }}
-		    </a></li> -->
-		    <li ng-repeat="track in playlist.tracks" class="ml2"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
+		    <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
               <strong>{{ track.user.username }}</strong> - {{ track.title }}
             </a></li>
 		  </ol>
