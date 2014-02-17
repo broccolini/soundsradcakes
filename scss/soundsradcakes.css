@@ -95,12 +95,16 @@ small, .small {
   .responsive .p, .responsive.p {
     font-size: 1.25rem; }
   .responsive .small, .responsive.small {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .responsive .soundsradcakes-icon {
+    width: 180px; } }
 @media (min-width: 1024px) {
   .responsive .h1, .responsive.h1 {
     font-size: 6rem; }
   .responsive .h2, .responsive.h2 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .responsive .soundsradcakes-icon {
+    width: 312px; } }
 
 strong, .bold {
   font-weight: 900; }
@@ -319,7 +323,7 @@ strong, .bold {
   background-position: center; }
 
 .soundsradcakes-icon {
-  max-width: 5rem; }
+  width: 120px; }
 
 .progress {
   -webkit-appearance: none;

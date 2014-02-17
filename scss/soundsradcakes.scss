@@ -145,10 +145,12 @@ small, .small {
     .h2, &.h2 { font-size: 2rem; }
     .p, &.p { font-size: 1.25rem; }
     .small, &.small { font-size: 1rem; }
+    .soundsradcakes-icon { width: 180px; }
   }
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 6rem; }
     .h2, &.h2 { font-size: 3rem; }
+    .soundsradcakes-icon { width: 312px; }
 
   }
 }
@@ -259,7 +261,7 @@ strong, .bold { font-weight: 900; }
 
 // Images
 .bg-cover { background-size: cover; background-position: center; }
-.soundsradcakes-icon { max-width: 5 * $space; }
+.soundsradcakes-icon { width: 120px; }
 
 // Player controls
 .progress {
