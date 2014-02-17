@@ -70,7 +70,12 @@ $white: #fff;
 $dark-gray: #444;
 $mid-gray: #898989;
 $light-gray: #D9D9D9;
+$dark-opaque: rgba(17, 17, 17, 0.7);
+$light-opaque: rgba(255, 255, 255, 0.8);
 
+html, body {
+  height: 100%;
+}
 
 body {
   color: $dark-gray;
@@ -79,7 +84,21 @@ body {
   font-weight: 300;
 }
 
-a {
+a, a.light-link {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: darken($yellow, 20%);
+  }
+}
+
+a.dark-yellow-link {
+  color: darken($yellow, 20%);
+  &:hover {
+    color: darken($yellow, 30%);
+  }
+}
+a.dark-link {
   color: $mid-gray;
   text-decoration: none;
   &:hover {
@@ -105,7 +124,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 } 
 
 h4, h5, h6, dl, ol, ul, p, .p {
@@ -129,12 +149,14 @@ small, .small {
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 6rem; }
     .h2, &.h2 { font-size: 3rem; }
+
   }
 }
 
 // Utilities
 strong, .bold { font-weight: 900; }
 .regular { font-weight: normal; }
+.light { font-weight: 300; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
@@ -204,6 +226,8 @@ strong, .bold { font-weight: 900; }
 .px4 { padding-right: 4 * $space; padding-left: 4 * $space; }
 .py4 { padding-top: 4 * $space; padding-bottom: 4 * $space; }
 
+.min-y100 { min-height: 100%; }
+
 // Display
 .inline       { display: inline;}
 .block        { display: block; }
@@ -219,7 +243,8 @@ strong, .bold { font-weight: 900; }
 
 // Themes
 .bg-yellow { background-color: $yellow; }
-.yellow { background-color: $yellow; }
+.yellow { color: $yellow; }
+.dark-yellow { color: darken($yellow, 20%); }
 .white { color: $white; }
 .bg-dark-gray { background-color: $dark-gray; }
 .dark-gray { color: $dark-gray; }
@@ -227,8 +252,14 @@ strong, .bold { font-weight: 900; }
 .mid-gray { color: $mid-gray; }
 .bg-light-gray { background-color: $light-gray; }
 .light-gray { color: $light-gray; }
+.bg-dark-opaque { background-color: $dark-opaque; }
+.bg-light-opaque { background-color: $light-opaque; }
+.shadow-darken { box-shadow: inset -16px 128px $dark-opaque; }
 
 
+// Images
+.bg-cover { background-size: cover; background-position: center; }
+.soundsradcakes-icon { max-width: 5 * $space; }
 
 // Player controls
 .progress {
@@ -239,12 +270,12 @@ strong, .bold { font-weight: 900; }
 }
 .progress::-webkit-progress-bar {
   -webkit-appearance: none;
-  background-color: $mid-gray;
+  background-color: $white;
 }
 .progress::-webkit-progress-value { -webkit-appearance: none; }
 
 .progress-gray::-webkit-progress-value { background-color: $yellow; }
-.progress-gray-alt::-webkit-progress-bar { background-color: $mid-gray; }
+.progress-gray-alt::-webkit-progress-bar { background-color: $white; }
 
 .progress-time {
   line-height: 2.25; 
@@ -253,15 +284,18 @@ strong, .bold { font-weight: 900; }
 .pad { margin-top: 0.5 * $space; }
 
 .icon {
-  max-height: 24px;
-  max-width: 24px;
 }
 
-.icon-play {  
-}
+.icon-play, .icon-pause {
+  height: 24px;
+  width: 24px;
+ }
 
-.icon-pause {
+.icon-previous, .icon-skip {
+  height: 22px;
+  width: 22px;
+  padding-top: 2px;
 }
 
 a:hover svg { fill: $yellow; }
-a svg { fill: $mid-gray; }
+a svg { fill: $white; }
