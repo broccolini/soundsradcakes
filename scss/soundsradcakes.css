@@ -274,6 +274,10 @@ strong, .bold {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
+.py6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
 .min-y100 {
   min-height: 100%; }
 
