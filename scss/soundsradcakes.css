@@ -286,6 +286,17 @@ strong, .bold {
 .inline-block {
   display: inline-block; }
 
+.table {
+  display: table;
+  width: 100%; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.relative {
+  position: relative; }
+
 .clearfix {
   overflow: hidden; }
 
