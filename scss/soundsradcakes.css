@@ -42,7 +42,7 @@ html, body {
 
 body {
   color: #444444;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 300; }
 
@@ -50,22 +50,36 @@ a, a.light-link {
   color: white;
   text-decoration: none; }
   a:hover, a.light-link:hover {
-    color: #c9a900; }
+    color: #ffde30; }
+
+a svg, a.light-link svg {
+  fill: white;
+  text-decoration: none; }
+  a svg:hover, a.light-link svg:hover {
+    fill: #ffde30; }
 
 a.dark-yellow-link {
   color: #c9a900; }
   a.dark-yellow-link:hover {
     color: #967e00; }
 
-a.dark-link {
+a.mid-gray-link {
   color: #898989;
   text-decoration: none; }
-  a.dark-link:hover {
+  a.mid-gray-link:hover {
     color: #707070; }
 
-.h-mega {
-  font-size: 3rem;
-  line-height: 1.25; }
+a.dark-link {
+  color: #444444;
+  text-decoration: none; }
+  a.dark-link:hover {
+    color: #777777; }
+
+a.dark-link svg {
+  fill: #444444;
+  text-decoration: none; }
+  a.dark-link svg:hover {
+    fill: #fcd400; }
 
 h1, .h1 {
   font-size: 2rem;
@@ -81,6 +95,9 @@ h3, .h3 {
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem; }
+
+.h-logo {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif; }
 
 small, .small {
   font-size: .875rem; }
@@ -296,6 +313,9 @@ strong, .bold {
 .white {
   color: white; }
 
+.bg-off-white {
+  background-color: #f9f9f9; }
+
 .bg-dark-gray {
   background-color: #444444; }
 
@@ -327,8 +347,21 @@ strong, .bold {
   background-size: cover;
   background-position: center; }
 
+.contain-left {
+  background-size: cover;
+  background-position: left, bottom;
+  background-repeat: no-repeat; }
+
 .soundsradcakes-icon {
   width: 120px; }
+
+.july-bg-image {
+  background-color: #f9f9f9;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 50px;
+  margin: 0 auto; }
 
 .progress {
   -webkit-appearance: none;
@@ -340,14 +373,24 @@ strong, .bold {
   -webkit-appearance: none;
   background-color: white; }
 
+.progress-dark::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: #444444; }
+
 .progress::-webkit-progress-value {
   -webkit-appearance: none; }
 
-.progress-gray::-webkit-progress-value {
+.progress-white::-webkit-progress-value {
   background-color: #ffde30; }
 
-.progress-gray-alt::-webkit-progress-bar {
+.progress-white-alt::-webkit-progress-bar {
   background-color: white; }
+
+.progress-dark::-webkit-progress-value {
+  background-color: #fcd400; }
+
+.progress-dark-alt::-webkit-progress-bar {
+  background-color: #444444; }
 
 .progress-time {
   line-height: 2.25; }
@@ -363,9 +406,3 @@ strong, .bold {
   height: 22px;
   width: 22px;
   padding-top: 2px; }
-
-a:hover svg {
-  fill: #ffde30; }
-
-a svg {
-  fill: white; }

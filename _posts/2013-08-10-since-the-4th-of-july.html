@@ -2,39 +2,62 @@
 layout: default
 title:  "Since the 4th of July"
 ---
+
+<div class="off-white pt1 july-bg-image" style="background-image: url(/images/4th-of-july.jpg)">
+<section class="wrap py2">
 {% raw  %}
- <article plangular data-src="http://soundcloud.com/broccolini/sets/since-the-4th-of-july" class="py2 px2 center bg-w100 bg-top">
-    <h1 class="h2 mb1 regular">{{ playlist.title }}</h1>
-    <p class="mb1">{{ playlist.description }}</p>   
-    <div class="media block mt1">
-      <div class="left">
-        <a href="" ng-click="player.previous(playlist)" class="dark-gray"><i class="icon-previous p tappad"></i></a>
-        <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-gray h3 tapped">
-        <svg class="icon icon-play pad svg-geo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <polygon points="2,2 30,16 2,30"/>
-        </svg></a>
-        <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="mid-gray">
-         <svg class="icon icon-pause pad" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-        <rect x="2" y="2" width="10" height="28"/>
-        <rect x="20" y="2" width="10" height="28"/>
-        </svg></a>
-        <a href="" ng-click="player.next(playlist)" class="dark-gray"><i class="icon-skip p tappad"></i></a>
-      </div>
+<article plangular data-src="http://soundcloud.com/broccolini/sets/since-the-4th-of-july" class="py1 px1 center bg-w100 bg-top" >
+    <div class="playlist-header bg-cover py1 px1">
+      <h1 class="dark-gray h2 regular mb1">{{ playlist.title }}</h1>
+      <p class=" dark-gray mb1">{{ playlist.description }}</p> 
+    <div class="media block py1">
+      <div class="left-controls left">
+        <div class="left previous-control">
+          <a href="" ng-click="player.previous(playlist)" class="dark-link"><i class="p tappad"></i>
+          <svg class="icon-previous pad mr1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <rect x="2" y="2" width="4" height="28" />
+            <polygon points="28,2 2,16 28,30"/>
+          </svg></a>
+        </div>
+        <div class="left pad play-control pause-control">
+          <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-link h3 tapped">
+          <svg class="icon icon-play svg-geo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <polygon points="2,2 30,16 2,30"/>
+          </svg></a>
+          <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="dark-link">
+           <svg class="icon icon-pause" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <rect x="2" y="2" width="10" height="28"/>
+            <rect x="20" y="2" width="10" height="28"/>
+          </svg></a>
+        </div>
+        <div class="left skip-control">
+          <a href="" ng-click="player.next(playlist)" class="dark-link"><i class="icon icon-skip p tappad"></i>
+          <svg class="icon-skip pad ml1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <polygon points="2,2 28,16 2,30"/>
+          <rect x="26" y="2" width="4" height="28" />
+          </svg></a>
+        </div>
+      </div><!-- End player controls -->
       <div class="right progress-time">
         <small class="fl">{{ currentTime | playTime }} | </small>
         <small class="fr">{{ duration | playTime }}</small>
-      </div>    
+      </div>   
       <div class="fit hidden">
-        <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="progress progress-gray px1">{{ currentTime / duration}}</progress>
+        <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="progress progress-dark px1">{{ currentTime / duration}}</progress>
       </div>    
-    </div>  
-    <div class="media py2">
-      <ol class="left-align block">
-        <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'dark-gray': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
-              <strong>{{ track.user.username }}</strong> - {{ track.title }}
+    </div>
+    </div>
+    <div class="playlist-tracks">
+    <div class="media py1">
+      <ul class="left-align block px1">
+        <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db dark-link" ng-class="{ 'white': (player.playing || player.paused) != track, 'white': (player.playing || player.paused) == track }">
+              <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
-      </ol>
-      <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="small mid-gray">View on SoundCloud</a>
+      </ul>
+      <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small regular dark-link mt2 left-align px1">View on SoundCloud</a>
+    </div>
     </div>
   </article>
 {% endraw %}
+</section>
+</div>

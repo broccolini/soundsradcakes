@@ -59,7 +59,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Typography
 
 // Default Font Stack
-$font-primary: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-primary: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-heading: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif !default;
 
 // Base spacing unit
 $space: 1rem !default;
@@ -72,6 +73,7 @@ $mid-gray: #898989;
 $light-gray: #D9D9D9;
 $dark-opaque: rgba(17, 17, 17, 0.7);
 $light-opaque: rgba(255, 255, 255, 0.8);
+$off-white: #f9f9f9;
 
 html, body {
   height: 100%;
@@ -88,7 +90,15 @@ a, a.light-link {
   color: $white;
   text-decoration: none;
   &:hover {
-    color: darken($yellow, 20%);
+    color: $yellow;
+  }
+}
+
+a svg, a.light-link svg {
+  fill: $white;
+  text-decoration: none;
+  &:hover {
+    fill: $yellow;
   }
 }
 
@@ -98,7 +108,7 @@ a.dark-yellow-link {
     color: darken($yellow, 30%);
   }
 }
-a.dark-link {
+a.mid-gray-link {
   color: $mid-gray;
   text-decoration: none;
   &:hover {
@@ -106,12 +116,24 @@ a.dark-link {
   }
 }
 
+a.dark-link {
+  color: $dark-gray;
+  text-decoration: none;
+  &:hover {
+    color: lighten($dark-gray, 20%);
+  }
+}
+
+a.dark-link svg {
+  fill: $dark-gray;
+  text-decoration: none;
+  &:hover {
+    fill: darken($yellow, 10%);
+  }
+}
+
 // Base Type Scale
 
-.h-mega {
-  font-size: 3rem;
-  line-height: 1.25;
-}
 
 h1, .h1 {
   font-size: 2rem;
@@ -130,6 +152,10 @@ h3, .h3 {
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
+}
+
+.h-logo {
+  font-family: $font-heading;
 }
 
 small, .small {
@@ -254,6 +280,7 @@ strong, .bold { font-weight: 900; }
 .yellow { color: $yellow; }
 .dark-yellow { color: darken($yellow, 20%); }
 .white { color: $white; }
+.bg-off-white { background-color: $off-white}
 .bg-dark-gray { background-color: $dark-gray; }
 .dark-gray { color: $dark-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
@@ -267,7 +294,17 @@ strong, .bold { font-weight: 900; }
 
 // Images
 .bg-cover { background-size: cover; background-position: center; }
+.contain-left { background-size: cover; background-position: left, bottom; background-repeat: no-repeat; }
 .soundsradcakes-icon { width: 120px; }
+
+.july-bg-image {
+  background-color: $off-white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 50px;
+  margin: 0 auto;
+}
 
 // Player controls
 .progress {
@@ -280,10 +317,17 @@ strong, .bold { font-weight: 900; }
   -webkit-appearance: none;
   background-color: $white;
 }
+.progress-dark::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: $dark-gray;
+}
 .progress::-webkit-progress-value { -webkit-appearance: none; }
 
-.progress-gray::-webkit-progress-value { background-color: $yellow; }
-.progress-gray-alt::-webkit-progress-bar { background-color: $white; }
+.progress-white::-webkit-progress-value { background-color: $yellow; }
+.progress-white-alt::-webkit-progress-bar { background-color: $white; }
+
+.progress-dark::-webkit-progress-value { background-color: darken($yellow, 10%); }
+.progress-dark-alt::-webkit-progress-bar { background-color: $dark-gray; }
 
 .progress-time {
   line-height: 2.25; 
@@ -305,5 +349,6 @@ strong, .bold { font-weight: 900; }
   padding-top: 2px;
 }
 
-a:hover svg { fill: $yellow; }
-a svg { fill: $white; }
+
+
+

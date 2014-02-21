@@ -7,7 +7,7 @@ title:  "I'm here now"
 {% raw  %}
 <article plangular data-src="http://soundcloud.com/broccolini/sets/im-here-now" class="py1 px1 center bg-w100 bg-top" >
 	  <div class="playlist-header bg-cover py1 px1">
-      <h1 class="white h1 light mb1">{{ playlist.title }}</h1>
+      <h1 class="white h2 regular mb1">{{ playlist.title }}</h1>
       <p class=" white mb1">{{ playlist.description }}</p> 
     <div class="media block white py1">
 	    <div class="left-controls left">
@@ -53,7 +53,7 @@ title:  "I'm here now"
               <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
 		  </ul>
-		  <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="small mid-gray">View on SoundCloud</a>
+		  <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small white mt2 left-align px1">View on SoundCloud</a>
 		</div>
     </div>
 	</article>
