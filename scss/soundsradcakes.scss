@@ -71,8 +71,8 @@ $white: #fff;
 $dark-gray: #444;
 $mid-gray: #898989;
 $light-gray: #D9D9D9;
-$dark-opaque: rgba(17, 17, 17, 0.7);
-$light-opaque: rgba(255, 255, 255, 0.8);
+$dark-opaque: rgba(17, 17, 17, 0.1);
+$light-opaque: rgba(255, 255, 255, 0.1);
 $off-white: #f9f9f9;
 
 html, body {
@@ -148,7 +148,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.25rem;
   line-height: 1.25rem;
-} 
+}
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
@@ -162,7 +162,7 @@ small, .small {
   font-size: .875rem;
 }
 
-ul { 
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -177,6 +177,7 @@ ul {
     .h2, &.h2 { font-size: 2rem; }
     .p, &.p { font-size: 1.25rem; }
     .small, &.small { font-size: 1rem; }
+    .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
     .soundsradcakes-icon { width: 180px; }
   }
   @media (min-width: 1024px) {
@@ -209,10 +210,14 @@ strong, .bold { font-weight: 900; }
 
 // Layout
 
-.wrap { 
+.wrap {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.half {
+  max-width: 50%;
 }
 
 // Margins
@@ -260,6 +265,7 @@ strong, .bold { font-weight: 900; }
 .px4 { padding-right: 4 * $space; padding-left: 4 * $space; }
 .py4 { padding-top: 4 * $space; padding-bottom: 4 * $space; }
 .py6 { padding-top: 6 * $space; padding-bottom: 6 * $space; }
+.py10 { padding-top: 10 * $space; padding-bottom: 10 * $space; }
 
 .min-y100 { min-height: 100%; }
 
@@ -283,6 +289,7 @@ strong, .bold { font-weight: 900; }
 .bg-yellow { background-color: $yellow; }
 .yellow { color: $yellow; }
 .dark-yellow { color: darken($yellow, 20%); }
+.bg-dark-yellow { background-color: darken($yellow, 20%); }
 .white { color: $white; }
 .bg-off-white { background-color: $off-white}
 .bg-dark-gray { background-color: $dark-gray; }
@@ -297,9 +304,44 @@ strong, .bold { font-weight: 900; }
 
 
 // Images
-.bg-cover { background-size: cover; background-position: center; }
+.bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .contain-left { background-size: cover; background-position: left, bottom; background-repeat: no-repeat; }
 .soundsradcakes-icon { width: 120px; }
+.img-small {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+.img-feature {
+  width: 100%;
+  height: 20 * $space;
+  border-radius: 20px;
+}
+
+/* For handwriting */
+.w-60 {
+  max-width: 60%;
+}
+
+.border-light-opaque {
+  box-shadow: 0 0 0 12px $light-opaque;
+}
+
+.border-dark-opaque {
+  box-shadow: 0 0 0 12px $dark-opaque;
+}
+
+.border-radius { border-radius: 10px; }
+.border-radius-top { border-radius: 10px 10px 0 0; }
+
+.border-top-yellow { border-top: 12px solid $yellow; }
+.border-bottom-yellow { border-bottom: 12px solid $yellow; }
+.border-bottom-dark-yellow { border-bottom: 12px solid darken($yellow, 20%); }
+.border-top-light-gray { border-top: 12px solid $light-gray; }
+.border-bottom-light-gray { border-bottom: 12px solid $light-gray; }
+.border-top-white { border-top: 12px solid $white; }
+.border-bottom-white { border-bottom: 12px solid $white; }
+
 
 .july-bg-image {
   background-color: $off-white;
@@ -334,7 +376,7 @@ strong, .bold { font-weight: 900; }
 .progress-dark-alt::-webkit-progress-bar { background-color: $dark-gray; }
 
 .progress-time {
-  line-height: 2.25; 
+  line-height: 2.25;
 }
 
 .pad { margin-top: 0.5 * $space; }
@@ -353,6 +395,12 @@ strong, .bold { font-weight: 900; }
   padding-top: 2px;
 }
 
+.btn {
+  border-radius: 6px; 
+  width: auto;
+}
 
-
-
+.icon-feature {
+  height: 36px;
+  width: 36px;
+}

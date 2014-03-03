@@ -118,6 +118,11 @@ ul {
     font-size: 1.25rem; }
   .responsive .small, .responsive.small {
     font-size: 1rem; }
+  .responsive .img-small {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 40px; }
   .responsive .soundsradcakes-icon {
     width: 180px; } }
 @media (min-width: 1024px) {
@@ -165,6 +170,9 @@ strong, .bold {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto; }
+
+.half {
+  max-width: 50%; }
 
 .m1 {
   margin: 1rem; }
@@ -278,6 +286,10 @@ strong, .bold {
   padding-top: 6rem;
   padding-bottom: 6rem; }
 
+.py10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
 .min-y100 {
   min-height: 100%; }
 
@@ -325,6 +337,9 @@ strong, .bold {
 .dark-yellow {
   color: #c9a900; }
 
+.bg-dark-yellow {
+  background-color: #c9a900; }
+
 .white {
   color: white; }
 
@@ -350,17 +365,18 @@ strong, .bold {
   color: #d9d9d9; }
 
 .bg-dark-opaque {
-  background-color: rgba(17, 17, 17, 0.7); }
+  background-color: rgba(17, 17, 17, 0.1); }
 
 .bg-light-opaque {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .shadow-darken {
-  box-shadow: inset -16px 128px rgba(17, 17, 17, 0.7); }
+  box-shadow: inset -16px 128px rgba(17, 17, 17, 0.1); }
 
 .bg-cover {
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .contain-left {
   background-size: cover;
@@ -369,6 +385,53 @@ strong, .bold {
 
 .soundsradcakes-icon {
   width: 120px; }
+
+.img-small {
+  width: 160px;
+  height: 160px;
+  overflow: hidden; }
+
+.img-feature {
+  width: 100%;
+  height: 20rem;
+  border-radius: 20px; }
+
+/* For handwriting */
+.w-60 {
+  max-width: 60%; }
+
+.border-light-opaque {
+  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.1); }
+
+.border-dark-opaque {
+  box-shadow: 0 0 0 12px rgba(17, 17, 17, 0.1); }
+
+.border-radius {
+  border-radius: 10px; }
+
+.border-radius-top {
+  border-radius: 10px 10px 0 0; }
+
+.border-top-yellow {
+  border-top: 12px solid #ffde30; }
+
+.border-bottom-yellow {
+  border-bottom: 12px solid #ffde30; }
+
+.border-bottom-dark-yellow {
+  border-bottom: 12px solid #c9a900; }
+
+.border-top-light-gray {
+  border-top: 12px solid #d9d9d9; }
+
+.border-bottom-light-gray {
+  border-bottom: 12px solid #d9d9d9; }
+
+.border-top-white {
+  border-top: 12px solid white; }
+
+.border-bottom-white {
+  border-bottom: 12px solid white; }
 
 .july-bg-image {
   background-color: #f9f9f9;
@@ -421,3 +484,11 @@ strong, .bold {
   height: 22px;
   width: 22px;
   padding-top: 2px; }
+
+.btn {
+  border-radius: 6px;
+  width: auto; }
+
+.icon-feature {
+  height: 36px;
+  width: 36px; }
