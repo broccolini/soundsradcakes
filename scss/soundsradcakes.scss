@@ -61,6 +61,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Default Font Stack
 $font-primary: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif !default;
 $font-heading: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-handwriting: 'Sacramento', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 
 // Base spacing unit
 $space: 1rem !default;
@@ -156,6 +157,10 @@ h4, h5, h6, dl, ol, ul, p, .p {
 
 .h-logo {
   font-family: $font-heading;
+}
+
+.h-handwriting {
+  font-family: $font-handwriting;
 }
 
 small, .small {

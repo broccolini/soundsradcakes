@@ -99,6 +99,9 @@ h4, h5, h6, dl, ol, ul, p, .p {
 .h-logo {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif; }
 
+.h-handwriting {
+  font-family: "Sacramento", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif; }
+
 small, .small {
   font-size: .875rem; }
 
