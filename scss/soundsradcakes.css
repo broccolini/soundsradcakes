@@ -471,13 +471,13 @@ strong, .bold {
   margin-top: 0.5rem; }
 
 .icon-play, .icon-pause {
-  height: 24px;
-  width: 24px; }
+  height: 23px;
+  width: 23px; }
 
 .icon-previous, .icon-skip {
-  height: 22px;
-  width: 22px;
-  padding-top: 2px; }
+  height: 18px;
+  width: 18px;
+  margin-top: 10px; }
 
 .btn {
   border-radius: 6px;
