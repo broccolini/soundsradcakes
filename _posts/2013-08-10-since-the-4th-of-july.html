@@ -50,7 +50,7 @@ title:  "Since the 4th of July"
     <div class="playlist-tracks">
     <div class="media py1">
       <ul class="left-align block px1">
-        <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db dark-link" ng-class="{ 'white': (player.playing || player.paused) != track, 'white': (player.playing || player.paused) == track }">
+        <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db dark-link" ng-class="{ 'dark-link': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
               <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
       </ul>
