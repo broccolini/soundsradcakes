@@ -349,6 +349,9 @@ strong, .bold {
 .bg-off-white {
   background-color: #f9f9f9; }
 
+.bg-off-white-lighten {
+  background-color: #ececec; }
+
 .bg-dark-gray {
   background-color: #444444; }
 
@@ -366,15 +369,6 @@ strong, .bold {
 
 .light-gray {
   color: #d9d9d9; }
-
-.bg-dark-opaque {
-  background-color: rgba(17, 17, 17, 0.1); }
-
-.bg-light-opaque {
-  background-color: rgba(255, 255, 255, 0.1); }
-
-.shadow-darken {
-  box-shadow: inset -16px 128px rgba(17, 17, 17, 0.1); }
 
 .bg-cover {
   background-size: cover;

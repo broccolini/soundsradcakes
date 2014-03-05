@@ -296,16 +296,14 @@ strong, .bold { font-weight: 900; }
 .dark-yellow { color: darken($yellow, 20%); }
 .bg-dark-yellow { background-color: darken($yellow, 20%); }
 .white { color: $white; }
-.bg-off-white { background-color: $off-white}
+.bg-off-white { background-color: $off-white; }
+.bg-off-white-lighten { background-color: darken($off-white, 5%); }
 .bg-dark-gray { background-color: $dark-gray; }
 .dark-gray { color: $dark-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
 .mid-gray { color: $mid-gray; }
 .bg-light-gray { background-color: $light-gray; }
 .light-gray { color: $light-gray; }
-.bg-dark-opaque { background-color: $dark-opaque; }
-.bg-light-opaque { background-color: $light-opaque; }
-.shadow-darken { box-shadow: inset -16px 128px $dark-opaque; }
 
 
 // Images
