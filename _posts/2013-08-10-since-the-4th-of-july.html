@@ -13,29 +13,22 @@ title:  "Since the 4th of July"
     <div class="media block py1">
       <div class="left-controls left">
         <div class="left previous-control">
-          <a href="" ng-click="player.previous(playlist)" class="dark-link"><i class="p tappad"></i>
-          <svg class="icon-previous pad mr1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <rect x="2" y="2" width="4" height="28" />
-            <polygon points="28,2 2,16 28,30"/>
-          </svg></a>
+          <a href="" ng-click="player.previous(playlist)" class="dark-link">
+            <div plangular-icon="previous" class="icon-previous pad mr1"></div>
+          </a> 
         </div>
         <div class="left pad play-control pause-control">
-          <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-link h3 tapped">
-          <svg class="icon icon-play svg-geo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <polygon points="2,2 30,16 2,30"/>
-          </svg></a>
+          <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-link">
+            <div plangular-icon="play" class="icon icon-play"></div>
+          </a>
           <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="dark-link">
-           <svg class="icon icon-pause" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <rect x="2" y="2" width="10" height="28"/>
-            <rect x="20" y="2" width="10" height="28"/>
-          </svg></a>
+           <div plangular-icon="pause" class="icon icon-pause"></div>
+           </a>
         </div>
         <div class="left skip-control">
-          <a href="" ng-click="player.next(playlist)" class="dark-link"><i class="icon icon-skip p tappad"></i>
-          <svg class="icon-skip pad ml1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-          <polygon points="2,2 28,16 2,30"/>
-          <rect x="26" y="2" width="4" height="28" />
-          </svg></a>
+          <a href="" ng-click="player.next(playlist)" class="dark-link"><i class="icon icon-skip"></i>
+            <div plangular-icon="next" class="icon-skip pad ml1"></div>
+          </a>
         </div>
       </div><!-- End player controls -->
       <div class="right progress-time">
