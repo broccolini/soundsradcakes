@@ -221,8 +221,20 @@ strong, .bold { font-weight: 900; }
   margin-left: auto;
 }
 
-.half {
-  max-width: 50%;
+.half-width {
+  width: 50%;
+}
+
+.h-12rem {
+  height: 12 * $space;
+}
+
+.third-width {
+  width: 33.3%;
+}
+
+.two-thirds-width {
+  width: 66.6%;
 }
 
 // Margins
@@ -336,6 +348,7 @@ strong, .bold { font-weight: 900; }
 .border-radius { border-radius: 10px; }
 .border-radius-top { border-radius: 10px 10px 0 0; }
 
+.border-white { border: 12px solid $white; }
 .border-top-yellow { border-top: 12px solid $yellow; }
 .border-bottom-yellow { border-bottom: 12px solid $yellow; }
 .border-bottom-dark-yellow { border-bottom: 12px solid darken($yellow, 20%); }
@@ -382,6 +395,7 @@ strong, .bold { font-weight: 900; }
 }
 
 .pad { margin-top: 0.5 * $space; }
+.pad-05 { margin: 0.5 * $space; }
 
 .icon {
 }

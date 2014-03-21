@@ -174,8 +174,17 @@ strong, .bold {
   margin-right: auto;
   margin-left: auto; }
 
-.half {
-  max-width: 50%; }
+.half-width {
+  width: 50%; }
+
+.h-12rem {
+  height: 12rem; }
+
+.third-width {
+  width: 33.3%; }
+
+.two-thirds-width {
+  width: 66.6%; }
 
 .m1 {
   margin: 1rem; }
@@ -406,6 +415,9 @@ strong, .bold {
 .border-radius-top {
   border-radius: 10px 10px 0 0; }
 
+.border-white {
+  border: 12px solid white; }
+
 .border-top-yellow {
   border-top: 12px solid #ffde30; }
 
@@ -469,6 +481,9 @@ strong, .bold {
 
 .pad {
   margin-top: 0.5rem; }
+
+.pad-05 {
+  margin: 0.5rem; }
 
 .icon-play, .icon-pause {
   height: 23px;
