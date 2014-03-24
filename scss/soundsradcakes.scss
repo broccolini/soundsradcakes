@@ -184,14 +184,24 @@ ul {
     .small, &.small { font-size: 1rem; }
     .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
     .soundsradcakes-icon { width: 180px; }
+    .h-12rem { height: 10 * $space; }
   }
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 6rem; }
     .h2, &.h2 { font-size: 3rem; }
     .soundsradcakes-icon { width: 242px; }
-
+    .half-width { width: 50%; }
+    .one-third-width { width: 40%; }
+    .two-thirds-width { width: 60%; }
+    .h-12rem { height: 12 * $space; }
   }
 }
+
+.half-width { width: 100%; }
+    .one-third-width { width: 100%; }
+    .two-thirds-width { width: 100%; }
+
+.h-12rem { height: 6 * $space; }
 
 // Utilities
 strong, .bold { font-weight: 900; }
@@ -219,22 +229,6 @@ strong, .bold { font-weight: 900; }
   max-width: 768px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.half-width {
-  width: 50%;
-}
-
-.h-12rem {
-  height: 12 * $space;
-}
-
-.third-width {
-  width: 40%;
-}
-
-.two-thirds-width {
-  width: 60%;
 }
 
 // Margins
