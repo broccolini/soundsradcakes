@@ -61,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Default Font Stack
 $font-primary: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif !default;
 $font-heading: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif !default;
-$font-handwriting: 'Sacramento', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+$font-handwriting: 'Lato', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 
 // Base spacing unit
 $space: 1rem !default;
@@ -188,7 +188,7 @@ ul {
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 6rem; }
     .h2, &.h2 { font-size: 3rem; }
-    .soundsradcakes-icon { width: 312px; }
+    .soundsradcakes-icon { width: 242px; }
 
   }
 }
@@ -230,11 +230,11 @@ strong, .bold { font-weight: 900; }
 }
 
 .third-width {
-  width: 33.3%;
+  width: 40%;
 }
 
 .two-thirds-width {
-  width: 66.6%;
+  width: 60%;
 }
 
 // Margins
@@ -305,6 +305,7 @@ strong, .bold { font-weight: 900; }
 // Themes
 .bg-yellow { background-color: $yellow; }
 .yellow { color: $yellow; }
+.mid-yellow { color: darken($yellow, 10%); }
 .dark-yellow { color: darken($yellow, 20%); }
 .bg-dark-yellow { background-color: darken($yellow, 20%); }
 .white { color: $white; }
@@ -395,7 +396,8 @@ strong, .bold { font-weight: 900; }
 }
 
 .pad { margin-top: 0.5 * $space; }
-.pad-05 { margin: 0.5 * $space; }
+.pad-05 { margin: 0.2 * $space; }
+.pad-04 { margin: 0.4 * $space; }
 
 .icon {
 }

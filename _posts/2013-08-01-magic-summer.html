@@ -1,42 +1,42 @@
 ---
 layout: default
-title:  "I'm here now"
+title:  "Magic Summer"
 ---
-<div class="fit bg-cover pt1" style="background-image: url(/images/im-here-now2.jpg)">
+<div class="fit bg-cover pt1" style="background-image: url(/images/plants.jpg)">
 <section class="wrap py2">
 {% raw  %}
-<article plangular data-src="http://soundcloud.com/broccolini/sets/im-here-now" class="py1 px1 center bg-w100 bg-top" >
+<article plangular data-src="http://soundcloud.com/jxnblk/sets/magic-summer" class="py1 px1 center bg-w100 bg-top" >
 	  <div class="playlist-header bg-cover py1 px1">
-      <h1 class="white h2 regular mb1">{{ playlist.title }}</h1>
+      <h1 class="h2 regular mb1 dark-gray">{{ playlist.title }}</h1>
       <p class=" white mb1">{{ playlist.description }}</p> 
-    <div class="media block white py1">    
+    <div class="media block py1">
       <div class="left-controls left">
         <div class="left previous-control">
-          <a href="" ng-click="player.previous(playlist)" class="">
+          <a href="" ng-click="player.previous(playlist)" class="dark-link">
             <div plangular-icon="previous" class="icon-previous pad mr1"></div>
           </a> 
         </div>
         <div class="left pad play-control pause-control">
-  	      <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="">
+          <a href="" ng-click="player.playPlaylist(playlist)" ng-hide="player.tracks == playlist.tracks && player.playing" class="dark-link">
             <div plangular-icon="play" class="icon icon-play"></div>
           </a>
-          <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="">
+          <a href="" ng-click="player.pause()" ng-show="player.tracks == playlist.tracks && player.playing" class="dark-link">
            <div plangular-icon="pause" class="icon icon-pause"></div>
            </a>
         </div>
         <div class="left skip-control">
-  	      <a href="" ng-click="player.next(playlist)" class="dark-gray"><i class="icon icon-skip"></i>
+          <a href="" ng-click="player.next(playlist)" class="dark-link"><i class="icon icon-skip"></i>
             <div plangular-icon="next" class="icon-skip pad ml1"></div>
           </a>
-  	    </div>
+        </div>
       </div><!-- End player controls -->
       <div class="right progress-time">
-	      <small class="fl">{{ currentTime | playTime }} | </small>
-	      <small class="fr">{{ duration | playTime }}</small>
+        <small class="fl">{{ currentTime | playTime }} | </small>
+        <small class="fr">{{ duration | playTime }}</small>
       </div>   
       <div class="fit hidden">
-        <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="progress progress-white progress-gray px1">{{ currentTime / duration}}</progress>
-      </div>	  
+        <progress value="{{ currentTime / duration}}" ng-click="seekTo($event)" class="progress progress-dark px1">{{ currentTime / duration}}</progress>
+      </div>    
     </div>
     </div>
     <div class="playlist-tracks">

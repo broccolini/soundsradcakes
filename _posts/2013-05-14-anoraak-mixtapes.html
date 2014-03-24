@@ -1,14 +1,15 @@
 ---
 layout: default
-title:  "Music to work to"
+title:  "Anoraak Mixtapes"
 ---
-<div class="fit bg-cover pt1" style="background-image: url(/images/music-to-work-to3.jpg)">
+    
+<div class="fit bg-cover pt1" style="background-image: url(/images/mixtape-bg.jpg)">
 <section class="wrap py2">
 {% raw  %}
-<article plangular data-src="http://soundcloud.com/broccolini/sets/music-to-work-to" class="py1 px1 center bg-w100 bg-top" >
+<article plangular data-src="http://soundcloud.com/anoraak/sets/boramusic-fm-mix" class="py1 px1 center bg-w100 bg-top" >
     <div class="playlist-header bg-cover py1 px1">
       <h1 class="white h2 regular mb1">{{ playlist.title }}</h1>
-      <p class=" white mb1">{{ playlist.description }}</p> 
+      <p class=" white mb1">8 tracks from Anoraak.</p> 
     <div class="media block white py1">
       <div class="left-controls left">
         <div class="left previous-control">
@@ -41,7 +42,7 @@ title:  "Music to work to"
     </div>
     <div class="playlist-tracks">
     <div class="media py1">
-      <ul class="left-align block px1 clearfix">
+      <ul class="left-align block px1">
         <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'white': (player.playing || player.paused) != track, 'yellow': (player.playing || player.paused) == track }">
               <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
@@ -52,4 +53,3 @@ title:  "Music to work to"
   </article>
 {% endraw %}
 </section>
-
