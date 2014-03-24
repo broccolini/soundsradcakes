@@ -390,9 +390,10 @@ strong, .bold { font-weight: 900; }
 }
 
 .pad { margin-top: 0.5 * $space; }
-.pad-top { margin-top: 0.4 * $space; }
-.pad-05 { margin: 0.2 * $space; }
-.pad-04 { margin: 0.4 * $space; }
+.mt-05 { margin-top: 0.5 * $space; }
+.mb-05 { margin-bottom: 0.5 * $space; }
+.m-02 { margin: 0.2 * $space; }
+.m-03 { margin: 0.3 * $space; }
 
 .icon {
 }

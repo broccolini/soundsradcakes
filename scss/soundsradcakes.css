@@ -495,14 +495,17 @@ strong, .bold {
 .pad {
   margin-top: 0.5rem; }
 
-.pad-top {
-  margin-top: 0.4rem; }
+.mt-05 {
+  margin-top: 0.5rem; }
 
-.pad-05 {
+.mb-05 {
+  margin-bottom: 0.5rem; }
+
+.m-02 {
   margin: 0.2rem; }
 
-.pad-04 {
-  margin: 0.4rem; }
+.m-03 {
+  margin: 0.3rem; }
 
 .icon-play, .icon-pause {
   height: 23px;
