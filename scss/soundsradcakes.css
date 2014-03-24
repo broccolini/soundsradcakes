@@ -100,7 +100,7 @@ h4, h5, h6, dl, ol, ul, p, .p {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif; }
 
 .h-handwriting {
-  font-family: "Sacramento", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Lato", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif; }
 
 small, .small {
   font-size: .875rem; }
@@ -127,14 +127,36 @@ ul {
     overflow: hidden;
     border-radius: 40px; }
   .responsive .soundsradcakes-icon {
-    width: 180px; } }
+    width: 180px; }
+  .responsive .h-12rem {
+    height: 10rem; } }
 @media (min-width: 1024px) {
   .responsive .h1, .responsive.h1 {
     font-size: 6rem; }
   .responsive .h2, .responsive.h2 {
     font-size: 3rem; }
   .responsive .soundsradcakes-icon {
-    width: 312px; } }
+    width: 242px; }
+  .responsive .half-width {
+    width: 50%; }
+  .responsive .one-third-width {
+    width: 40%; }
+  .responsive .two-thirds-width {
+    width: 60%; }
+  .responsive .h-12rem {
+    height: 12rem; } }
+
+.half-width {
+  width: 100%; }
+
+.one-third-width {
+  width: 100%; }
+
+.two-thirds-width {
+  width: 100%; }
+
+.h-12rem {
+  height: 6rem; }
 
 strong, .bold {
   font-weight: 900; }
@@ -173,9 +195,6 @@ strong, .bold {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto; }
-
-.half {
-  max-width: 50%; }
 
 .m1 {
   margin: 1rem; }
@@ -337,6 +356,9 @@ strong, .bold {
 .yellow {
   color: #ffde30; }
 
+.mid-yellow {
+  color: #fcd400; }
+
 .dark-yellow {
   color: #c9a900; }
 
@@ -406,6 +428,9 @@ strong, .bold {
 .border-radius-top {
   border-radius: 10px 10px 0 0; }
 
+.border-white {
+  border: 12px solid white; }
+
 .border-top-yellow {
   border-top: 12px solid #ffde30; }
 
@@ -469,6 +494,18 @@ strong, .bold {
 
 .pad {
   margin-top: 0.5rem; }
+
+.mt-05 {
+  margin-top: 0.5rem; }
+
+.mb-05 {
+  margin-bottom: 0.5rem; }
+
+.m-02 {
+  margin: 0.2rem; }
+
+.m-03 {
+  margin: 0.3rem; }
 
 .icon-play, .icon-pause {
   height: 23px;
