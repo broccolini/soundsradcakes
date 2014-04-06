@@ -520,6 +520,10 @@ strong, .bold {
   border-radius: 6px;
   width: auto; }
 
+.btn-yellow:hover {
+  color: #898989;
+  background-color: #fcd400; }
+
 .icon-feature {
   height: 36px;
   width: 36px; }

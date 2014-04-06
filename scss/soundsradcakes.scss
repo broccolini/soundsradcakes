@@ -414,6 +414,11 @@ strong, .bold { font-weight: 900; }
   width: auto;
 }
 
+.btn-yellow:hover {
+  color: $mid-gray;
+  background-color: darken($yellow, 10%);
+}
+
 .icon-feature {
   height: 36px;
   width: 36px;
