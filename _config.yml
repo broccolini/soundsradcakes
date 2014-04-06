@@ -2,3 +2,4 @@ url: "http://soundsradcakes.com"
 name: SoundsRadcakes
 pygments: true
 permalink: /posts/:title
+markdown: kramdown
