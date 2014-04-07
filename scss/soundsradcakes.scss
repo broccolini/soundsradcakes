@@ -103,6 +103,13 @@ a svg, a.light-link svg {
   }
 }
 
+a.yellow-link {
+  color: $yellow;
+  &:hover {
+    color: darken($yellow, 10%);
+  }
+}
+
 a.dark-yellow-link {
   color: darken($yellow, 20%);
   &:hover {

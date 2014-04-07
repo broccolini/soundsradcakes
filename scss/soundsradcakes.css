@@ -58,6 +58,11 @@ a svg, a.light-link svg {
   a svg:hover, a.light-link svg:hover {
     fill: #ffde30; }
 
+a.yellow-link {
+  color: #ffde30; }
+  a.yellow-link:hover {
+    color: #fcd400; }
+
 a.dark-yellow-link {
   color: #c9a900; }
   a.dark-yellow-link:hover {
