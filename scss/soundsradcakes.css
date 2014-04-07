@@ -146,7 +146,9 @@ ul {
   .responsive .two-thirds-width {
     width: 60%; }
   .responsive .h-12rem {
-    height: 12rem; } }
+    height: 12rem; }
+  .responsive .july-bg-image {
+    background-position: 50% 30%; } }
 
 .half-width {
   width: 100%; }
@@ -412,6 +414,14 @@ strong, .bold {
   height: 20rem;
   border-radius: 20px; }
 
+.july-bg-image {
+  background-color: #f9f9f9;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  margin: 0 auto; }
+
 /* For handwriting */
 .w-60 {
   max-width: 60%; }
@@ -451,14 +461,6 @@ strong, .bold {
 
 .border-bottom-white {
   border-bottom: 12px solid white; }
-
-.july-bg-image {
-  background-color: #f9f9f9;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding-top: 50px;
-  margin: 0 auto; }
 
 .progress {
   -webkit-appearance: none;
