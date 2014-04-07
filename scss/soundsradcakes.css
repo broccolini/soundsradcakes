@@ -86,6 +86,9 @@ a.dark-link svg {
   a.dark-link svg:hover {
     fill: #fcd400; }
 
+h1, .h1, h2, .h2 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif; }
+
 h1, .h1 {
   font-size: 2rem;
   line-height: 1.25; }
@@ -100,12 +103,6 @@ h3, .h3 {
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem; }
-
-.h-logo {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif; }
-
-.h-handwriting {
-  font-family: "Lato", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif; }
 
 small, .small {
   font-size: .875rem; }
@@ -399,6 +396,9 @@ strong, .bold {
   background-position: center;
   background-repeat: no-repeat; }
 
+.bg-fixed {
+  background-attachment: fixed; }
+
 .contain-left {
   background-size: cover;
   background-position: left, bottom;
@@ -406,11 +406,6 @@ strong, .bold {
 
 .soundsradcakes-icon {
   width: 120px; }
-
-.img-small {
-  width: 160px;
-  height: 160px;
-  overflow: hidden; }
 
 .img-feature {
   width: 100%;
