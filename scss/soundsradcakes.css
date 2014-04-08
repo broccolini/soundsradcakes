@@ -514,12 +514,20 @@ strong, .bold {
 
 .btn {
   border-radius: 6px;
-  width: auto; }
+  width: auto;
+  box-shadow: inset 0 0 0 3px white; }
 
 .btn-yellow:hover {
   color: #898989;
-  background-color: #fcd400; }
+  background-color: #fcd400;
+  box-shadow: 0 0 0 1px #fcd400; }
 
 .icon-feature {
   height: 36px;
   width: 36px; }
+
+.anim-popin {
+  -webkit-animation: popin .1s;
+  animation: popin .1s;
+  transition-duration: .2s;
+  transition-timing-function: ease; }
