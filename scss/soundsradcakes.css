@@ -146,6 +146,9 @@ ul {
   .responsive .july-bg-image {
     background-position: 50% 30%; } }
 
+.full-width {
+  width: 100%; }
+
 .half-width {
   width: 100%; }
 
@@ -315,6 +318,9 @@ strong, .bold {
 .min-y100 {
   min-height: 100%; }
 
+.t0 {
+  top: 0; }
+
 .inline {
   display: inline; }
 
@@ -332,8 +338,14 @@ strong, .bold {
   display: table-cell;
   vertical-align: middle; }
 
+.middle {
+  vertical-align: middle; }
+
 .relative {
   position: relative; }
+
+.absolute {
+  position: absolute; }
 
 .clearfix {
   overflow: hidden; }
@@ -419,10 +431,6 @@ strong, .bold {
   background-attachment: fixed;
   margin: 0 auto; }
 
-/* For handwriting */
-.w-60 {
-  max-width: 60%; }
-
 .border-light-opaque {
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.1); }
 
@@ -435,29 +443,11 @@ strong, .bold {
 .border-radius-top {
   border-radius: 10px 10px 0 0; }
 
-.border-white {
-  border: 12px solid white; }
-
-.border-top-yellow {
-  border-top: 12px solid #ffde30; }
-
-.border-bottom-yellow {
-  border-bottom: 12px solid #ffde30; }
-
-.border-bottom-dark-yellow {
-  border-bottom: 12px solid #c9a900; }
-
-.border-top-light-gray {
-  border-top: 12px solid #d9d9d9; }
-
-.border-bottom-light-gray {
-  border-bottom: 12px solid #d9d9d9; }
-
 .border-top-white {
-  border-top: 12px solid white; }
+  border-top: 0.6rem solid white; }
 
 .border-bottom-white {
-  border-bottom: 12px solid white; }
+  border-bottom: 0.6rem solid white; }
 
 .progress {
   -webkit-appearance: none;

@@ -198,6 +198,7 @@ ul {
   }
 }
 
+.full-width { width: 100%; }
 .half-width { width: 100%; }
     .one-third-width { width: 100%; }
     .two-thirds-width { width: 100%; }
@@ -281,13 +282,17 @@ strong, .bold { font-weight: 900; }
 
 .min-y100 { min-height: 100%; }
 
+.t0 { top: 0; }
+
 // Display
 .inline       { display: inline;}
 .block        { display: block; }
 .inline-block { display: inline-block; }
 .table { display: table; width: 100%; }
 .table-cell { display: table-cell; vertical-align: middle; }
+.middle { vertical-align: middle; }
 .relative { position: relative; }
+.absolute { position: absolute; }
 
 // Utilities
 .clearfix { overflow: hidden; }
@@ -334,10 +339,6 @@ strong, .bold { font-weight: 900; }
   margin: 0 auto;
 }
 
-/* For handwriting */
-.w-60 {
-  max-width: 60%;
-}
 
 .border-light-opaque {
   box-shadow: 0 0 0 12px $light-opaque;
@@ -350,14 +351,8 @@ strong, .bold { font-weight: 900; }
 .border-radius { border-radius: 10px; }
 .border-radius-top { border-radius: 10px 10px 0 0; }
 
-.border-white { border: 12px solid $white; }
-.border-top-yellow { border-top: 12px solid $yellow; }
-.border-bottom-yellow { border-bottom: 12px solid $yellow; }
-.border-bottom-dark-yellow { border-bottom: 12px solid darken($yellow, 20%); }
-.border-top-light-gray { border-top: 12px solid $light-gray; }
-.border-bottom-light-gray { border-bottom: 12px solid $light-gray; }
-.border-top-white { border-top: 12px solid $white; }
-.border-bottom-white { border-bottom: 12px solid $white; }
+.border-top-white { border-top: 0.6 *$space solid $white; }
+.border-bottom-white { border-bottom: 0.6 *$space solid $white; }
 
 // Player controls
 .progress {
