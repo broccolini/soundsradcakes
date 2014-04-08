@@ -185,13 +185,11 @@ ul {
     .p, &.p { font-size: 1.25rem; }
     .small, &.small { font-size: 1rem; }
     .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
-    .soundsradcakes-icon { width: 180px; }
     .h-12rem { height: 10 * $space; }
   }
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 6rem; }
     .h2, &.h2 { font-size: 3rem; }
-    .soundsradcakes-icon { width: 242px; }
     .half-width { width: 50%; }
     .one-third-width { width: 40%; }
     .two-thirds-width { width: 60%; }
@@ -319,7 +317,7 @@ strong, .bold { font-weight: 900; }
 .bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .bg-fixed { background-attachment:fixed; }
 .contain-left { background-size: cover; background-position: left, bottom; background-repeat: no-repeat; }
-.soundsradcakes-icon { width: 120px; }
+.soundsradcakes-icon { width: 32px; margin-right: .5 * $space }
 
 .img-feature {
   width: 100%;

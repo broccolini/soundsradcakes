@@ -128,8 +128,6 @@ ul {
     height: 80px;
     overflow: hidden;
     border-radius: 40px; }
-  .responsive .soundsradcakes-icon {
-    width: 180px; }
   .responsive .h-12rem {
     height: 10rem; } }
 @media (min-width: 1024px) {
@@ -137,8 +135,6 @@ ul {
     font-size: 6rem; }
   .responsive .h2, .responsive.h2 {
     font-size: 3rem; }
-  .responsive .soundsradcakes-icon {
-    width: 242px; }
   .responsive .half-width {
     width: 50%; }
   .responsive .one-third-width {
@@ -407,7 +403,8 @@ strong, .bold {
   background-repeat: no-repeat; }
 
 .soundsradcakes-icon {
-  width: 120px; }
+  width: 32px;
+  margin-right: 0.5rem; }
 
 .img-feature {
   width: 100%;
