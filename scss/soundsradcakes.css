@@ -131,7 +131,10 @@ ul {
     overflow: hidden;
     border-radius: 40px; }
   .responsive .h-12rem {
-    height: 10rem; } }
+    height: 10rem; }
+  .responsive .py10 {
+    padding-top: 6rem;
+    padding-bottom: 6rem; } }
 @media (min-width: 1024px) {
   .responsive .h1, .responsive.h1 {
     font-size: 4rem; }
@@ -149,7 +152,10 @@ ul {
   .responsive .h-12rem {
     height: 12rem; }
   .responsive .july-bg-image {
-    background-position: 50% 30%; } }
+    background-position: 50% 30%; }
+  .responsive .py10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem; } }
 
 .full-width {
   width: 100%; }
@@ -317,8 +323,8 @@ strong, .bold {
   padding-bottom: 6rem; }
 
 .py10 {
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
 
 .min-y100 {
   min-height: 100%; }
@@ -535,8 +541,34 @@ strong, .bold {
   height: 36px;
   width: 36px; }
 
+/* Animations*/
+.player-btn {
+  border-radius: .25rem;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition: box-shadow , background-color;
+  -webkit-font-smoothing: antialiased; }
+
+@-webkit-keyframes popin {
+  0% {
+    -webkit-transform: scale(0.2); }
+
+  80% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@keyframes popin {
+  0% {
+    transform: scale(0.2); }
+
+  80% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
 .anim-popin {
   -webkit-animation: popin .1s;
-  animation: popin .1s;
-  transition-duration: .2s;
-  transition-timing-function: ease; }
+  animation: popin .1s; }
