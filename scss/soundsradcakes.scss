@@ -182,7 +182,6 @@ ul {
 // Apply the .responsive class directly to elements or their parents
 .responsive {
   @media (min-width: 768px) and (max-width: 1023px) {
-    .h-mega { font-size: 6rem; }
     .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 2rem; }
     .h3, &.h3 { font-size: 1.5rem; }
@@ -192,7 +191,7 @@ ul {
     .h-12rem { height: 10 * $space; }
   }
   @media (min-width: 1024px) {
-    .h1, &.h1 { font-size: 6rem; }
+    .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 3rem; }
     .p, &.p { font-size: 1.125rem; line-height: 1.25rem; }
     .half-width { width: 50%; }
@@ -356,8 +355,15 @@ strong, .bold { font-weight: 900; }
 .border-radius { border-radius: 10px; }
 .border-radius-top { border-radius: 10px 10px 0 0; }
 
-.border-top-white { border-top: 0.6 *$space solid $white; }
-.border-bottom-white { border-bottom: 0.6 *$space solid $white; }
+.border-top-white { border-top: 0.5 *$space solid $white; }
+.border-right-white { border-right: 0.5 *$space solid $white; }
+.border-bottom-white { border-bottom: 0.5 *$space solid $white; }
+.border-left-white { border-left: 0.5 *$space solid $white; }
+
+.border-lr-white { 
+  border-left: 0.5 * $space solid $white;
+  border-right: 0.5 * $space solid $white;
+}
 
 // Player controls
 .progress {
@@ -410,9 +416,10 @@ strong, .bold { font-weight: 900; }
   border-radius: 6px; 
   width: auto;
   box-shadow: inset 0 0 0 3px $white;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.btn-yellow:hover {
+.btn:hover {
   color: $mid-gray;
   background-color: darken($yellow, 10%);
   box-shadow: 0 0 0 1px darken($yellow, 10%);

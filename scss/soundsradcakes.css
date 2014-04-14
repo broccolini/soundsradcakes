@@ -114,8 +114,6 @@ ul {
   padding: 0; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .responsive .h-mega {
-    font-size: 6rem; }
   .responsive .h1, .responsive.h1 {
     font-size: 4rem; }
   .responsive .h2, .responsive.h2 {
@@ -136,7 +134,7 @@ ul {
     height: 10rem; } }
 @media (min-width: 1024px) {
   .responsive .h1, .responsive.h1 {
-    font-size: 6rem; }
+    font-size: 4rem; }
   .responsive .h2, .responsive.h2 {
     font-size: 3rem; }
   .responsive .p, .responsive.p {
@@ -451,10 +449,20 @@ strong, .bold {
   border-radius: 10px 10px 0 0; }
 
 .border-top-white {
-  border-top: 0.6rem solid white; }
+  border-top: 0.5rem solid white; }
+
+.border-right-white {
+  border-right: 0.5rem solid white; }
 
 .border-bottom-white {
-  border-bottom: 0.6rem solid white; }
+  border-bottom: 0.5rem solid white; }
+
+.border-left-white {
+  border-left: 0.5rem solid white; }
+
+.border-lr-white {
+  border-left: 0.5rem solid white;
+  border-right: 0.5rem solid white; }
 
 .progress {
   -webkit-appearance: none;
@@ -515,9 +523,10 @@ strong, .bold {
 .btn {
   border-radius: 6px;
   width: auto;
-  box-shadow: inset 0 0 0 3px white; }
+  box-shadow: inset 0 0 0 3px white;
+  background-color: rgba(0, 0, 0, 0.1); }
 
-.btn-yellow:hover {
+.btn:hover {
   color: #898989;
   background-color: #fcd400;
   box-shadow: 0 0 0 1px #fcd400; }
