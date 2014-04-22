@@ -156,7 +156,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.25rem;
 }
 
@@ -189,7 +189,7 @@ ul {
   @media (min-width: 768px) and (max-width: 1023px) {
     .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 2rem; }
-    .h3, &.h3 { font-size: 1.5rem; }
+    .h3, &.h3 { font-size: 1.125rem; line-height: 1.25rem; }
     .p, &.p { font-size: 1.125rem; line-height: 1.25rem; }
     .small, &.small { font-size: 1rem; }
     .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
@@ -199,6 +199,7 @@ ul {
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 3rem; }
+    .h3, &.h3 { font-size: 1.5rem; line-height: 1.75rem; }
     .p, &.p { font-size: 1.125rem; line-height: 1.5rem; }
     .half-width { width: 50%; }
     .one-third-width { width: 40%; }
@@ -218,7 +219,7 @@ ul {
 
 // Utilities
 strong, .bold { font-weight: 900; }
-.regular { font-weight: normal; }
+.regular { font-weight: 400; }
 .light { font-weight: 300; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
 .center { text-align: center; }

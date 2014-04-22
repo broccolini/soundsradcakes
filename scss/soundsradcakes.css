@@ -98,7 +98,7 @@ h2, .h2 {
   line-height: 1.25; }
 
 h3, .h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.25rem; }
 
 h4, h5, h6, dl, ol, ul, p, .p {
@@ -124,7 +124,8 @@ ul {
   .responsive .h2, .responsive.h2 {
     font-size: 2rem; }
   .responsive .h3, .responsive.h3 {
-    font-size: 1.5rem; }
+    font-size: 1.125rem;
+    line-height: 1.25rem; }
   .responsive .p, .responsive.p {
     font-size: 1.125rem;
     line-height: 1.25rem; }
@@ -145,6 +146,9 @@ ul {
     font-size: 4rem; }
   .responsive .h2, .responsive.h2 {
     font-size: 3rem; }
+  .responsive .h3, .responsive.h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem; }
   .responsive .p, .responsive.p {
     font-size: 1.125rem;
     line-height: 1.5rem; }
@@ -181,7 +185,7 @@ strong, .bold {
   font-weight: 900; }
 
 .regular {
-  font-weight: normal; }
+  font-weight: 400; }
 
 .light {
   font-weight: 300; }
