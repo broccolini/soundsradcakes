@@ -42,7 +42,7 @@ html, body {
 
 body {
   color: #444444;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 300; }
 
@@ -103,7 +103,7 @@ h3, .h3 {
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
-  line-height: 1.15rem; }
+  line-height: 1.5rem; }
 
 .h-logo {
   font-size: 1.25rem;
@@ -138,8 +138,8 @@ ul {
   .responsive .h-12rem {
     height: 10rem; }
   .responsive .py10 {
-    padding-top: 6rem;
-    padding-bottom: 6rem; } }
+    padding-top: 5rem;
+    padding-bottom: 5rem; } }
 @media (min-width: 1024px) {
   .responsive .h1, .responsive.h1 {
     font-size: 4rem; }
@@ -147,7 +147,7 @@ ul {
     font-size: 3rem; }
   .responsive .p, .responsive.p {
     font-size: 1.125rem;
-    line-height: 1.25rem; }
+    line-height: 1.5rem; }
   .responsive .half-width {
     width: 50%; }
   .responsive .one-third-width {
@@ -328,8 +328,8 @@ strong, .bold {
   padding-bottom: 6rem; }
 
 .py10 {
-  padding-top: 6rem;
-  padding-bottom: 6rem; }
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
 
 .min-y100 {
   min-height: 100%; }

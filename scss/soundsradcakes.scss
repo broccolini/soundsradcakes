@@ -59,8 +59,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Typography
 
 // Default Font Stack
-$font-primary: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif !default;
-$font-heading: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-primary: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
 
 // Base spacing unit
 $space: 1rem !default;
@@ -143,7 +142,7 @@ a.dark-link svg {
 
 
 h1, .h1, h2, .h2 {
-  font-family: $font-heading;
+  font-family: $font-primary;
 }
 
 h1, .h1 {
@@ -163,7 +162,7 @@ h3, .h3 {
 
 h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
-  line-height: 1.15rem;
+  line-height: 1.5rem;
 }
 
 .h-logo {
@@ -184,7 +183,7 @@ ul {
 
 
 
-// Responsive Type Scale
+// Responsive
 // Apply the .responsive class directly to elements or their parents
 .responsive {
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -195,12 +194,12 @@ ul {
     .small, &.small { font-size: 1rem; }
     .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
     .h-12rem { height: 10 * $space; }
-    .py10 { padding-top: 6 * $space; padding-bottom: 6 * $space; }
+    .py10 { padding-top: 5 * $space; padding-bottom: 5 * $space; }
   }
   @media (min-width: 1024px) {
     .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 3rem; }
-    .p, &.p { font-size: 1.125rem; line-height: 1.25rem; }
+    .p, &.p { font-size: 1.125rem; line-height: 1.5rem; }
     .half-width { width: 50%; }
     .one-third-width { width: 40%; }
     .two-thirds-width { width: 60%; }
@@ -292,7 +291,7 @@ strong, .bold { font-weight: 900; }
 .py6 { padding-top: 6 * $space; padding-bottom: 6 * $space; }
 
 // Scale for mobile
-.py10 { padding-top: 6 * $space; padding-bottom: 6 * $space; }
+.py10 { padding-top: 5 * $space; padding-bottom: 5 * $space; }
 
 .min-y100 { min-height: 100%; }
 
