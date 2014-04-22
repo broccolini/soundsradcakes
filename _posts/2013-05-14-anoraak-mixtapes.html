@@ -7,7 +7,7 @@ title:  "Anoraak Mixtapes"
 <section class="wrap py2">
 {% raw  %}
 <article plangular data-src="http://soundcloud.com/anoraak/sets/boramusic-fm-mix" class="py1 px1 center bg-w100 bg-top" >
-    <div class="playlist-header bg-cover py1 px1">
+    <div class="playlist-header bg-cover py1 px1 fadein">
       <h1 class="white h2 bold mb1">Anoraak Mixtapes</h1>
       <p class=" white mb1">8 tracks from Anoraak.</p> 
     <div class="media block white py1">
@@ -40,17 +40,19 @@ title:  "Anoraak Mixtapes"
       </div>    
     </div>
     </div>
-    <div class="playlist-tracks">
+    <div class="playlist-tracks fadein">
     <div class="media py1">
       <ul class="left-align block px1">
         <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db" ng-class="{ 'white': (player.playing || player.paused) != track, 'yellow': (player.playing || player.paused) == track }">
               <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
       </ul>
-      <p class="block white mt2 left-align px1">Playlist by {{ playlist.user.username }}</p>
-      <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small white mt1 left-align px1">View on SoundCloud</a>
     </div>
     </div>
+      <div class="playlist-tracks fadein">
+        <p class="block white mt2 left-align px1">Playlist by {{ playlist.user.username }}</p>
+        <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small white mt1 left-align px1">View on SoundCloud</a>
+      </div>
   </article>
 {% endraw %}
 </section>

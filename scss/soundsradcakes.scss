@@ -440,8 +440,8 @@ strong, .bold { font-weight: 900; }
   width: 36px;
 }
 
-/* Animations*/
 
+// Animations
 
 .player-btn {
 border-radius: .25rem;
@@ -465,3 +465,22 @@ transition: box-shadow , background-color;
   -webkit-animation: popin .1s;
   animation: popin .1s;
 }
+
+@-webkit-keyframes fadein {
+  from { -webkit-transform: scale(.7); opacity: 0; }
+    to { -webkit-transform: scale(1); opacity: 1; }
+}
+.fadein {
+  -webkit-animation: fadein .2s ease;
+}
+
+@-webkit-keyframes opacity-delay {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+.opacity-delay1 { -webkit-animation: opacity-delay 1s; }
+.opacity-delay3 { -webkit-animation: opacity-delay 3s; }
+.opacity-delay7 { -webkit-animation: opacity-delay 7s; }
+
+
+

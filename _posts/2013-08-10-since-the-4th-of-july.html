@@ -7,9 +7,9 @@ title:  "Since the 4th of July"
 <section class="wrap py2">
 {% raw  %}
 <article plangular data-src="http://soundcloud.com/broccolini/sets/since-the-4th-of-july" class="py1 px1 center bg-w100 bg-top" >
-    <div class="playlist-header bg-cover py1 px1">
-      <h1 class="dark-gray h2 bold mb1">{{ playlist.title }}</h1>
-      <p class=" dark-gray mb1">{{ playlist.description }}</p> 
+    <div class="playlist-header bg-cover py1 px1 fadein">
+      <h1 class="dark-gray h2 bold mb1">Since the 4th of July</h1>
+      <p class=" dark-gray mb1">A collection of some of my favorite tracks, inspired by a special best friend cat.</p> 
     <div class="media block py1">
       <div class="left-controls left">
         <div class="left previous-control">
@@ -40,17 +40,19 @@ title:  "Since the 4th of July"
       </div>    
     </div>
     </div>
-    <div class="playlist-tracks">
+    <div class="playlist-tracks fadein">
     <div class="media py1">
       <ul class="left-align block px1">
         <li ng-repeat="track in playlist.tracks" class="pad"><a href="" ng-click="player.play(playlist.tracks, $index)" class="db dark-link" ng-class="{ 'dark-link': (player.playing || player.paused) != track, 'mid-gray': (player.playing || player.paused) == track }">
               <small>{{ track.user.username }}</small> <span class="h3 regular block mb1">{{ track.title }}</span>
             </a></li>
       </ul>
-      <p class="regular block mt2 left-align px1 dark-gray">Playlist by {{ playlist.user.username }}</p>
-      <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small regular dark-link mt1 left-align px1">View on SoundCloud</a>
     </div>
     </div>
+      <div class="opacity-delay3">
+        <p class="regular block mt2 left-align px1 dark-gray">Playlist by {{ playlist.user.username }}</p>
+        <a ng-href="{{ playlist.permalink_url }}" target="_blank" class="block small regular dark-link mt1 left-align px1">View on SoundCloud</a>
+      </div>
   </article>
 {% endraw %}
 </section>
