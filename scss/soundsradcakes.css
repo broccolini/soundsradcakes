@@ -105,6 +105,11 @@ h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
   line-height: 1.15rem; }
 
+.h-logo {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 900; }
+
 small, .small {
   font-size: .875rem; }
 
