@@ -172,10 +172,7 @@ ul {
     padding-top: 10rem;
     padding-bottom: 10rem; } }
 
-.full-width {
-  width: 100%; }
-
-.half-width {
+.full-width, .half-width, .one-third-width, .two-thirds-width, .one-quarter-width, .two-fifths-width, .three-fifths-width {
   width: 100%; }
 
 .h-12rem {

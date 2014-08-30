@@ -213,8 +213,7 @@ ul {
   }
 }
 
-.full-width { width: 100%; }
-.half-width { width: 100%; }
+.full-width, .half-width, .one-third-width, .two-thirds-width, .one-quarter-width, .two-fifths-width, .three-fifths-width { width: 100%; }
     
 
 .h-12rem { height: 6 * $space; }
