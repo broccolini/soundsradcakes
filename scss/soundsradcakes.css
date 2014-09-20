@@ -41,7 +41,7 @@ html, body {
   height: 100%; }
 
 body {
-  color: #444444;
+  color: #222222;
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 300; }
@@ -75,13 +75,13 @@ a.mid-gray-link {
     color: #707070; }
 
 a.dark-link {
-  color: #444444;
+  color: #222222;
   text-decoration: none; }
   a.dark-link:hover {
-    color: #777777; }
+    color: #555555; }
 
 a.dark-link svg {
-  fill: #444444;
+  fill: #222222;
   text-decoration: none; }
   a.dark-link svg:hover {
     fill: #fcd400; }
@@ -204,6 +204,9 @@ strong, .bold {
   list-style-type: none;
   padding-left: 0; }
 
+@media (max-width: 40em) {
+  .mobile-hide {
+    display: none !important; } }
 .type-margins h1, .type-margins .h1 {
   margin-bottom: 1rem; }
 .type-margins h2, .type-margins .h2 {
@@ -401,10 +404,10 @@ strong, .bold {
   background-color: #f9f9f9; }
 
 .bg-dark-gray {
-  background-color: #444444; }
+  background-color: #222222; }
 
 .dark-gray {
-  color: #444444; }
+  color: #222222; }
 
 .bg-mid-gray {
   background-color: #898989; }
@@ -488,7 +491,7 @@ strong, .bold {
 
 .progress-dark::-webkit-progress-bar {
   -webkit-appearance: none;
-  background-color: #444444; }
+  background-color: #222222; }
 
 .progress::-webkit-progress-value {
   -webkit-appearance: none; }
@@ -503,7 +506,7 @@ strong, .bold {
   background-color: #fcd400; }
 
 .progress-dark-alt::-webkit-progress-bar {
-  background-color: #444444; }
+  background-color: #222222; }
 
 .progress-time {
   line-height: 2.25; }
@@ -533,15 +536,32 @@ strong, .bold {
   margin-top: 10px; }
 
 .btn {
-  border-radius: 6px;
-  width: auto;
-  box-shadow: inset 0 0 0 3px white;
-  background-color: rgba(0, 0, 0, 0.1); }
+  font-size: 1.25rem;
+  color: #222222;
+  background-color: #ffde30;
+  font-weight: 900;
+  cursor: pointer;
+  border: #c9a900 2px solid;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  line-height: 2.5rem;
+  height: auto;
+  min-height: 2.25rem;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
 
 .btn:hover {
-  color: #898989;
-  background-color: #fcd400;
-  box-shadow: 0 0 0 1px #fcd400; }
+  font-weight: 900;
+  color: #222222;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.1) 2px solid; }
+
+.btn-large {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem; }
 
 .icon-feature {
   height: 36px;
