@@ -300,6 +300,7 @@ strong, .bold { font-weight: 900; }
 .py10 { padding-top: 5 * $space; padding-bottom: 5 * $space; }
 
 .min-y100 { min-height: 100%; }
+.min-100vh { min-height: 100vh; }
 
 .t0 { top: 0; }
 
@@ -417,8 +418,7 @@ strong, .bold { font-weight: 900; }
 }
 
 .icon-play, .icon-pause {
-  height: 23px;
-  width: 23px;
+  margin-top: 0.25rem;
  }
 
 .icon-previous, .icon-skip {
