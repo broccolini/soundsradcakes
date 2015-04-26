@@ -101,6 +101,14 @@ a svg, a.light-link svg {
   }
 }
 
+a.dark-link {
+  color: $dark-gray;
+  text-decoration: none;
+  &:hover {
+    color: lighten($dark-gray, 20%);
+  }
+}
+
 a.yellow-link {
   color: $yellow;
   &:hover {
@@ -122,13 +130,6 @@ a.mid-gray-link {
   }
 }
 
-a.dark-link {
-  color: $dark-gray;
-  text-decoration: none;
-  &:hover {
-    color: lighten($dark-gray, 20%);
-  }
-}
 
 a.dark-link svg {
   fill: $dark-gray;
