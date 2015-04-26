@@ -3,3 +3,4 @@ name: SoundsRadcakes
 highlighter: rouge
 permalink: /posts/:title
 markdown: kramdown
+exclude: [scss/soundsradcakes.scss]
