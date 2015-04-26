@@ -1,5 +1,6 @@
 url: "http://soundsradcakes.com"
 name: SoundsRadcakes
-pygments: true
+highlighter: rouge
 permalink: /posts/:title
 markdown: kramdown
+exclude: [scss/soundsradcakes.scss]

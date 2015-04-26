@@ -58,6 +58,12 @@ a svg, a.light-link svg {
   a svg:hover, a.light-link svg:hover {
     fill: #ffde30; }
 
+a.dark-link {
+  color: #222222;
+  text-decoration: none; }
+  a.dark-link:hover {
+    color: #555555; }
+
 a.yellow-link {
   color: #ffde30; }
   a.yellow-link:hover {
@@ -73,12 +79,6 @@ a.mid-gray-link {
   text-decoration: none; }
   a.mid-gray-link:hover {
     color: #707070; }
-
-a.dark-link {
-  color: #222222;
-  text-decoration: none; }
-  a.dark-link:hover {
-    color: #555555; }
 
 a.dark-link svg {
   fill: #222222;
@@ -338,6 +338,9 @@ strong, .bold {
 .min-y100 {
   min-height: 100%; }
 
+.min-100vh {
+  min-height: 100vh; }
+
 .t0 {
   top: 0; }
 
@@ -527,8 +530,7 @@ strong, .bold {
   margin: 0.3rem; }
 
 .icon-play, .icon-pause {
-  height: 23px;
-  width: 23px; }
+  margin-top: 0.25rem; }
 
 .icon-previous, .icon-skip {
   height: 18px;
