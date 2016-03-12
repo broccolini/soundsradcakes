@@ -1,0 +1,17 @@
+---
+layout: default
+title:  "Thinking of Brooklyn"
+playlist: http://soundcloud.com/broccolini/sets/magic-numbers
+image: /images/thinking-of-brooklyn.jpg
+---
+<div class="min-100vh fit bg-cover bg-fixed pt1 border-lr-white" style="background-image: url({{page.image}})">
+  <section class="wrap py2">
+    <article class="center py1 px1 bg-w100 bg-top">
+      <div class="bg-cover py1 px1 fadein">
+        <h1 class="h2 bold mb1 white">{{page.title}}</h1>
+        <p class="mb1 white">No sleep.</p>
+      </div>
+      {% include player.html playlist=page.playlist %}
+    </article>
+  </section>
+</div>
