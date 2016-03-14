@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Anoraak Mixtapes"
+description: "8 tracks from Anoraak."
 playlist: http://soundcloud.com/anoraak/sets/boramusic-fm-mix
 image: /images/mixtape-bg.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/mixtape-bg.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">8 tracks from Anoraak.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "I'm here now"
+description: "A mix of bouncy and mellow tracks and remixes from artists such as Ta-ku, Bonobo, Four Tet, and London Grammar. Inspired by my first few months in New York."
 playlist: http://soundcloud.com/broccolini/sets/im-here-now
 image: /images/im-here-now2.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/im-here-now2.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">A mix of bouncy and mellow tracks and remixes from artists such as Ta-ku, Bonobo, Four Tet, and London Grammar. Inspired by my first few months in New York.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

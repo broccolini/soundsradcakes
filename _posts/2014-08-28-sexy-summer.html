@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Sexy Summer"
+description: "A mix of sexy beats inspired by the summer heat."
 playlist: http://soundcloud.com/broccolini/sets/sexy-summer
 image: /images/sexy-summer.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/sexy-summer.jpg
     <article class="center py1 px1 bg-w100 bg-top">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1 white">{{page.title}}</h1>
-        <p class="mb1 white">A mix of sexy beats inspired by the summer heat.</p>
+        <p class="mb1 white">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

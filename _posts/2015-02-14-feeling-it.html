@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Feeling it"
+description: "Warning: this playlist may give you an attack of the feels."
 playlist: http://soundcloud.com/broccolini/sets/feeling-it
 image: /images/feeling-it.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/feeling-it.jpg
     <article class="center py1 px1 bg-w100 bg-top">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1 white">{{page.title}}</h1>
-        <p class="mb1 white">Warning: this playlist may give you an attack of the feels.</p>
+        <p class="mb1 white">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

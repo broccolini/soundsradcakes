@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Music to work to"
+description: "Never get out of the zone with 14 hours of music sets by artists including Lenzman, The Twelves, Bonobo, Atish, and Mark Slee."
 playlist: http://soundcloud.com/broccolini/sets/music-to-work-to
 image: /images/music-to-work-to3.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/music-to-work-to3.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">Never get out of the zone with 14 hours of music sets by artists including Lenzman, The Twelves, Bonobo, Atish, and Mark Slee.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>
