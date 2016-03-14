@@ -5,17 +5,15 @@ title:  "SoundsRadcakes"
 
 <div class="flex flex-wrap border-white">
     {% for post in site.posts %}
-
-          <a class="box box-border flex-auto bg-cover yellow-link py2 flex items-center justify-center" style="background-image: url({{post.image}})" href="{{ post.url | prepend: site.baseurl }}">
-            <div class="m-03">
-              {% if forloop.first %}
-                <h1 class="h1 bold">{{ post.title }}</h1>
-                <p class="h3 regular center white">{{post.description}}</p>
-              {% else %}
-                <h1 class="h2">{{ post.title }}</h1>
-              {% endif %}
-            </div>
-          </a>
-
+        <a class="box box-border flex-auto bg-cover yellow-link py2 flex items-center justify-center" style="background-image: url({{post.image}})" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="m-03">
+            {% if forloop.first %}
+              <h1 class="h1 center">{{ post.title }}</h1>
+              <p class="h3 regular center white">{{post.description}}</p>
+            {% else %}
+              <h1 class="h2 center">{{ post.title }}</h1>
+            {% endif %}
+          </div>
+        </a>
     {% endfor %}
 </div>

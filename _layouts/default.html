@@ -1,12 +1,12 @@
 {% include header.html %}
-<header class="py1 p1 bg-yellow border-bottom-white">
+<header class="bg-yellow py1 p1 block border-bottom-white">
 	<div class="clearfix">
-		<a href="/"><img class="h1 left soundsradcakes-icon" src="/images/soundsradcakes-icon.svg">
-	  	<h1 class="h-logo pad white">SoundsRadcakes</h1></a>
-  	</div>
-</header>  
-  
-  {{ content }} 
+		<a href="/"><span class="left soundsradcakes-icon">{% include logo.html %}</span>
+		<h1 class="h-logo pad white">SoundsRadcakes</h1></a>
+	</div>
+</header>
+
+  {{ content }}
    <div class="border-top-white">
   {% include footer.html %}
   </div>
