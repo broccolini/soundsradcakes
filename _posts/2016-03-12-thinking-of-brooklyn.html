@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Thinking of Brooklyn"
+description: "No sleep."
 playlist: http://soundcloud.com/broccolini/sets/magic-numbers
 image: /images/thinking-of-brooklyn.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/thinking-of-brooklyn.jpg
     <article class="center py1 px1 bg-w100 bg-top">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1 white">{{page.title}}</h1>
-        <p class="mb1 white">No sleep.</p>
+        <p class="mb1 white">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>
