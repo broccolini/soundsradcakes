@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Under your spell"
+description: "A collection of love and heartbreak inspired electronic remixes, and a few original tracks."
 playlist: http://soundcloud.com/broccolini/sets/under-your-spell
 image: /images/under-your-spell.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/under-your-spell.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">A collection of love and heartbreak inspired electronic remixes, and a few original tracks.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

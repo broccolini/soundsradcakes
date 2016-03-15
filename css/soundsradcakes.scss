@@ -1,41 +1,20 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 /*
 
-  BASSCSS
-
-  Part reset, part boilerplate, part framework, all minimal.
-
-  BASSCSS is a small reset and collection of simple type and layout
-  classes that can be used as the basis for any web project.
-  Use it out of the box or as a base for a larger SASS project.
-
-
-  Contents:
-  1. Reset
-  2. Typography
-     a. Default Font Stack
-     b. Base Type Scale
-     c. Responsive Type Scale
-     d. Utilities
-  3. Layout
-     a. Margins
-     b. Padding
-     c. Display
-     d. Utilities
-
-
-  Made with love by Jxnblk
+  The foundation of this stylesheet uses BASSCSS
+  Made by Jxnblk
 
 */
-
-
-
 
 // Settings
 
 // Defines whether or not to reset margins to 0
 // $reset-margins: true;
 // Default font stack
-// $font-primary: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+// $font-primary: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 // Base spacing unit
 // $space: 1rem;
 
@@ -63,6 +42,11 @@ $font-primary: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
 
 // Base spacing unit
 $space: 1rem !default;
+
+// Breakpoints
+$media-sm: 40em;
+$media-md: 52em;
+$media-lg: 60em;
 
 // Colors
 $yellow: #FFDE30;
@@ -165,6 +149,21 @@ h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
+// Responsive type
+
+@media (min-width: $media-sm) and (max-width: $media-md) {
+  .h1 { font-size: 4rem; }
+  .h2 { font-size: 2rem; }
+  .h3 { font-size: 1.125rem; line-height: 1.25rem; }
+  .p { font-size: 1.125rem; line-height: 1.25rem; }
+}
+
+@media (min-width: $media-md) {
+  .h1 { font-size: 4rem; }
+  .h2 { font-size: 3rem; }
+  .h3 { font-size: 1.5rem; line-height: 1.75rem; }
+  .p { font-size: 1.125rem; line-height: 1.5rem; }
+}
 
 .h-logo {
   font-size: 1.25rem;
@@ -184,40 +183,6 @@ ul {
 
 
 
-// Responsive
-// Apply the .responsive class directly to elements or their parents
-.responsive {
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .h1, &.h1 { font-size: 4rem; }
-    .h2, &.h2 { font-size: 2rem; }
-    .h3, &.h3 { font-size: 1.125rem; line-height: 1.25rem; }
-    .p, &.p { font-size: 1.125rem; line-height: 1.25rem; }
-    .small, &.small { font-size: 1rem; }
-    .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
-    .h-12rem { height: 10 * $space; }
-    .py10 { padding-top: 5 * $space; padding-bottom: 5 * $space; }
-  }
-  @media (min-width: 1024px) {
-    .h1, &.h1 { font-size: 4rem; }
-    .h2, &.h2 { font-size: 3rem; }
-    .h3, &.h3 { font-size: 1.5rem; line-height: 1.75rem; }
-    .p, &.p { font-size: 1.125rem; line-height: 1.5rem; }
-    .half-width { width: 50%; }
-    .one-third-width { width: percentage(1/3); }
-    .one-quarter-width { width: percentage(1/4); }
-    .two-thirds-width { width: percentage(2/3); }
-    .two-fifths-width { width: percentage(2/5); }
-    .three-fifths-width { width: percentage(3/5); }
-    .h-12rem { height: 12 * $space; }
-    .july-bg-image { background-position: 50% 30%; }
-    .py10 { padding-top: 10 * $space; padding-bottom: 10 * $space; }
-  }
-}
-
-.full-width, .half-width, .one-third-width, .two-thirds-width, .one-quarter-width, .two-fifths-width, .three-fifths-width { width: 100%; }
-    
-
-.h-12rem { height: 6 * $space; }
 
 // Utilities
 strong, .bold { font-weight: 900; }
@@ -229,7 +194,7 @@ strong, .bold { font-weight: 900; }
 .left-align {text-align: left; }
 .list-none { list-style-type: none; padding-left: 0; }
 
-@media (max-width: 40em) {
+@media (max-width: $media-sm) {
   .mobile-hide   { display: none !important; }
 }
 
@@ -240,7 +205,6 @@ strong, .bold { font-weight: 900; }
   h2, .h2 { margin-bottom: $space; }
   h3, h4, h5, h6, p, dl, ol, ul { margin-bottom: $space; }
 }
-
 
 
 // Layout
@@ -305,7 +269,8 @@ strong, .bold { font-weight: 900; }
 
 .t0 { top: 0; }
 
-// Display
+// Layout
+
 .inline       { display: inline;}
 .block        { display: block; }
 .inline-block { display: inline-block; }
@@ -315,12 +280,132 @@ strong, .bold { font-weight: 900; }
 .relative { position: relative; }
 .absolute { position: absolute; }
 
-// Utilities
 .clearfix { overflow: hidden; }
 .left { float: left; }
 .right { float: right; }
 .fit { max-width: 100%; }
 .hidden { overflow: hidden; }
+
+// Box grid
+
+.box {
+  height: 8 * $space;
+}
+
+.box-border {
+  width: 100%;
+  box-shadow: inset 0 0 0 4px white;
+}
+
+@media (min-width: $media-sm) {
+
+  .box {
+    height: 12 * $space;
+  }
+
+  .box:nth-child(4n),
+  .box:nth-child(4n-1) {
+    width: 66%;
+  }
+
+  .box:nth-child(4n-2),
+  .box:nth-child(4n-3) {
+    width: 33%;
+  }
+
+}
+
+.box:first-child {
+  width: 100%;
+  height: 24 * $space;;
+}
+
+// Flex
+
+.flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
+
+@media (min-width: $media-sm) {
+  .sm-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
+}
+
+@media (min-width: $media-md) {
+  .md-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
+}
+
+@media (min-width: $media-lg) {
+  .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
+}
+
+.flex-column  { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column }
+
+.flex-wrap    { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap }
+
+.items-start    { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; -ms-grid-row-align: flex-start; align-items: flex-start }
+
+.items-end      { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; -ms-grid-row-align: flex-end; align-items: flex-end }
+
+.items-center   { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center }
+
+.items-baseline { -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; -ms-grid-row-align: baseline; align-items: baseline }
+
+.items-stretch  { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; -ms-grid-row-align: stretch; align-items: stretch }
+
+.self-start    { -webkit-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start }
+
+.self-end      { -webkit-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end }
+
+.self-center   { -webkit-align-self: center; -ms-flex-item-align: center; align-self: center }
+
+.self-baseline { -webkit-align-self: baseline; -ms-flex-item-align: baseline; align-self: baseline }
+
+.self-stretch  { -webkit-align-self: stretch; -ms-flex-item-align: stretch; align-self: stretch }
+
+.justify-start   { -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start }
+
+.justify-end     { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end }
+
+.justify-center  { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center }
+
+.justify-between { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between }
+
+.justify-around  { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around }
+
+.content-start   { -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start }
+
+.content-end     { -webkit-align-content: flex-end; -ms-flex-line-pack: end; align-content: flex-end }
+
+.content-center  { -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center }
+
+.content-between { -webkit-align-content: space-between; -ms-flex-line-pack: justify; align-content: space-between }
+
+.content-around  { -webkit-align-content: space-around; -ms-flex-line-pack: distribute; align-content: space-around }
+
+.content-stretch { -webkit-align-content: stretch; -ms-flex-line-pack: stretch; align-content: stretch }
+
+/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
+
+.flex-auto {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+
+.flex-none { -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none }
+
+.order-0 { -webkit-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0 }
+
+.order-1 { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1 }
+
+.order-2 { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2 }
+
+.order-3 { -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3 }
+
+.order-last { -webkit-box-ordinal-group: 100000; -webkit-order: 99999; -ms-flex-order: 99999; order: 99999 }
+
+
 
 
 // Themes
@@ -342,14 +427,7 @@ strong, .bold { font-weight: 900; }
 // Images
 .bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .bg-fixed { background-attachment:fixed; }
-.contain-left { background-size: cover; background-position: left, bottom; background-repeat: no-repeat; }
-.soundsradcakes-icon { width: 32px; margin-right: .5 * $space }
-
-.img-feature {
-  width: 100%;
-  height: 20 * $space;
-  border-radius: 20px;
-}
+.soundsradcakes-icon { margin-right: .5 * $space; }
 
 .july-bg-image {
   background-color: $off-white;
@@ -360,24 +438,17 @@ strong, .bold { font-weight: 900; }
   margin: 0 auto;
 }
 
-
-.border-light-opaque {
-  box-shadow: 0 0 0 12px $light-opaque;
+@media (min-width: $media-md) {
+  .july-bg-image { background-position: 50% 30%; }
 }
 
-.border-dark-opaque {
-  box-shadow: 0 0 0 12px $dark-opaque;
-}
-
-.border-radius { border-radius: 10px; }
-.border-radius-top { border-radius: 10px 10px 0 0; }
-
+.border-white { border: 4px solid $white; }
 .border-top-white { border-top: 0.5 *$space solid $white; }
 .border-right-white { border-right: 0.5 *$space solid $white; }
 .border-bottom-white { border-bottom: 0.5 *$space solid $white; }
 .border-left-white { border-left: 0.5 *$space solid $white; }
 
-.border-lr-white { 
+.border-lr-white {
   border-left: 0.5 * $space solid $white;
   border-right: 0.5 * $space solid $white;
 }
@@ -428,37 +499,6 @@ strong, .bold { font-weight: 900; }
   margin-top: 10px;
 }
 
-.btn {
-  font-size: 1.25rem;
-  color: $dark-gray;
-  background-color: $yellow;
-  font-weight: 900;
-  cursor: pointer;
-  border: darken($yellow, 20%) 2px solid;
-  -webkit-appearance: none;
-  appearance: none;
-  display: inline-block;
-  line-height: 2.5rem;
-  height: auto;
-  min-height: 2.25rem;
-  padding: 0 1rem;
-  border-radius: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.btn:hover {
-  font-weight: 900;
-  color: $dark-gray;
-  background-color: $white;
-  border: rgba(0, 0, 0, 0.1) 2px solid;
-}
-
-.btn-large {
-  font-size: 1.5rem;
-  padding: 0.5rem 2rem;
-}
-
 .icon-feature {
   height: 36px;
   width: 36px;
@@ -468,23 +508,23 @@ strong, .bold { font-weight: 900; }
 // Animations
 
 .player-btn {
-border-radius: .25rem;
-transition-duration: .2s;
-transition-timing-function: ease;
-transition: box-shadow , background-color;
--webkit-font-smoothing: antialiased;
+  border-radius: .25rem;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition: box-shadow , background-color;
+  -webkit-font-smoothing: antialiased;
 }
 
 @-webkit-keyframes popin {
   0% { -webkit-transform: scale(.2); }
   80% { -webkit-transform: scale(1.1); }
   100% { -webkit-transform: scale(1); }
-} 
+}
 @keyframes popin {
   0% { transform: scale(.2); }
   80% { transform: scale(1.1); }
   100% { transform: scale(1); }
-} 
+}
 .anim-popin {
   -webkit-animation: popin .1s;
   animation: popin .1s;
@@ -505,6 +545,3 @@ transition: box-shadow , background-color;
 .opacity-delay1 { -webkit-animation: opacity-delay 1s; }
 .opacity-delay3 { -webkit-animation: opacity-delay 3s; }
 .opacity-delay7 { -webkit-animation: opacity-delay 7s; }
-
-
-

@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Since the 4th of July"
+description: "A collection of some of my favorite tracks, inspired by a special best friend cat."
 playlist: http://soundcloud.com/broccolini/sets/since-the-4th-of-july
 image: /images/4th-of-july.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/4th-of-july.jpg
     <article class="center py1 px1 bg-w100 bg-top dark-gray">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">A collection of some of my favorite tracks, inspired by a special best friend cat.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player-dark.html playlist=page.playlist %}
     </article>

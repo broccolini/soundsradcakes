@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Just Chillax"
+description: "Just breathe, relax, and chill out to these tracks."
 playlist: http://soundcloud.com/broccolini/sets/just-chillax
 image: /images/just-chillax.jpg
 ---
@@ -9,7 +10,7 @@ image: /images/just-chillax.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb1">Just breathe, relax, and chill out to these tracks.</p>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>

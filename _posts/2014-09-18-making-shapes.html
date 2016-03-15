@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Making Shapes"
+description: "For my sister Natalie, who is one of many brave health workers going to Sierra Leone to help with the Ebola Outbreak."
 playlist: http://soundcloud.com/broccolini/sets/making-shapes
 image: /images/making-shapes.jpg
 ---
@@ -9,8 +10,7 @@ image: /images/making-shapes.jpg
     <article class="center py1 px1 bg-w100 bg-top white">
       <div class="bg-cover py1 px1 fadein">
         <h1 class="h2 bold mb1">{{page.title}}</h1>
-        <p class="mb2">For my sister Natalie, who is one of many brave health workers going to<br class="mobile-hide"> Sierra Leone to help with the Ebola Outbreak.</p>
-        <a class="btn mb3" href="https://www.justgiving.com/kslpebolaresponse">Donate</a>
+        <p class="mb1">{{page.description}}</p>
       </div>
       {% include player.html playlist=page.playlist %}
     </article>
