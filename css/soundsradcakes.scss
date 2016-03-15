@@ -149,6 +149,21 @@ h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
+// Responsive type
+
+@media (min-width: $media-sm) and (max-width: $media-md) {
+  .h1 { font-size: 4rem; }
+  .h2 { font-size: 2rem; }
+  .h3 { font-size: 1.125rem; line-height: 1.25rem; }
+  .p { font-size: 1.125rem; line-height: 1.25rem; }
+}
+
+@media (min-width: $media-md) {
+  .h1 { font-size: 4rem; }
+  .h2 { font-size: 3rem; }
+  .h3 { font-size: 1.5rem; line-height: 1.75rem; }
+  .p { font-size: 1.125rem; line-height: 1.5rem; }
+}
 
 .h-logo {
   font-size: 1.25rem;
@@ -167,28 +182,7 @@ ul {
   }
 
 
-// Responsive
-// Apply the .responsive class directly to elements or their parents
-.responsive {
-  @media (min-width: $media-sm) and (max-width: $media-md) {
-    .h1, &.h1 { font-size: 4rem; }
-    .h2, &.h2 { font-size: 2rem; }
-    .h3, &.h3 { font-size: 1.125rem; line-height: 1.25rem; }
-    .p, &.p { font-size: 1.125rem; line-height: 1.25rem; }
-    .small, &.small { font-size: 1rem; }
-    .img-small { width: 80px; height: 80px; overflow: hidden; border-radius: 40px; }
-    .py10 { padding-top: 5 * $space; padding-bottom: 5 * $space; }
-  }
 
-  @media (min-width: $media-md) {
-    .h1, &.h1 { font-size: 4rem; }
-    .h2, &.h2 { font-size: 3rem; }
-    .h3, &.h3 { font-size: 1.5rem; line-height: 1.75rem; }
-    .p, &.p { font-size: 1.125rem; line-height: 1.5rem; }
-    .july-bg-image { background-position: 50% 30%; }
-    .py10 { padding-top: 10 * $space; padding-bottom: 10 * $space; }
-  }
-}
 
 // Utilities
 strong, .bold { font-weight: 900; }
@@ -433,8 +427,7 @@ strong, .bold { font-weight: 900; }
 // Images
 .bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .bg-fixed { background-attachment:fixed; }
-.contain-left { background-size: cover; background-position: left, bottom; background-repeat: no-repeat; }
-.soundsradcakes-icon { width: 32px; margin-right: .5 * $space; }
+.soundsradcakes-icon { margin-right: .5 * $space; }
 
 .july-bg-image {
   background-color: $off-white;
@@ -445,17 +438,9 @@ strong, .bold { font-weight: 900; }
   margin: 0 auto;
 }
 
-
-.border-light-opaque {
-  box-shadow: 0 0 0 12px $light-opaque;
+@media (min-width: $media-md) {
+  .july-bg-image { background-position: 50% 30%; }
 }
-
-.border-dark-opaque {
-  box-shadow: 0 0 0 12px $dark-opaque;
-}
-
-.border-radius { border-radius: 10px; }
-.border-radius-top { border-radius: 10px 10px 0 0; }
 
 .border-white { border: 4px solid $white; }
 .border-top-white { border-top: 0.5 *$space solid $white; }
