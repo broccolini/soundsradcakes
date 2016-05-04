@@ -1,0 +1,18 @@
+---
+layout: default
+title:  "Up in the air"
+description: "The skies the limit."
+playlist: https://soundcloud.com/broccolini/sets/up-in-the-air
+image: /images/up-in-the-air.jpg
+---
+<div class="min-100vh fit bg-cover bg-fixed pt1 border-lr-white" style="background-image: url({{page.image}})">
+  <section class="wrap py2">
+    <article class="center py1 px1 bg-w100 bg-top">
+      <div class="bg-cover py1 px1 fadein">
+        <h1 class="h2 bold mb1 white">{{page.title}}</h1>
+        <p class="mb1 white">{{page.description}}</p>
+      </div>
+      {% include player.html playlist=page.playlist %}
+    </article>
+  </section>
+</div>
